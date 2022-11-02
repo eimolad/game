@@ -1,0 +1,9 @@
+{
+    "equipment": [5,3,3,4,5],
+    "name": "Leviton3#D530",
+    "quest": [
+        {"questStep":0,"dialog_count":0,"recipe":"false"},
+        {"scroll":0, "vector":[]}],    
+    "charId": "yvfl5-aikor-uwiaa-aaaaa-dmaau-4aqca-aaaii-q",
+    "position": [0,0,0]
+}

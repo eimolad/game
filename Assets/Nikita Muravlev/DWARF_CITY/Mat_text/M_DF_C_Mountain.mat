@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5758543650771598467
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: M_DF_C_Mountain
+  m_Shader: {fileID: -6465566751694194690, guid: c4b62426db79d27409cf0c0c5d19c03b,
+    type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 2
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MeshAlbedo:
+        m_Texture: {fileID: 2800000, guid: 42d2dbe1fa96ccb4aba0566017da0d67, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MeshMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MeshNormal:
+        m_Texture: {fileID: 2800000, guid: a794304781fbb5549937d8ee9fc114b7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SideAlbedo:
+        m_Texture: {fileID: 2800000, guid: f8778226e27ea934f9a34ef482b7ac42, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SideMask:
+        m_Texture: {fileID: 2800000, guid: b00a51423caf88c43aa9b033717a1bdd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SideNormal:
+        m_Texture: {fileID: 2800000, guid: 58173ecf3a5df7648918c7b35ca61ccf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TopAlbedo:
+        m_Texture: {fileID: 2800000, guid: 956aa25fabb8b844b9cb2713976a5e80, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TopMask:
+        m_Texture: {fileID: 2800000, guid: eb3955861e71aaa41927436a343e75df, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TopNormal:
+        m_Texture: {fileID: 2800000, guid: 9175eae6e5203514db5bf39070a52945, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Adjustment: 0.128
+    - _BlendSharpness: 3.5
+    - _BlendSharpnessSide: 15
+    - _BlendSharpnessTop: 4
+    - _DetailAdjustment: 0.5
+    - _DetailDistance: 100
+    - _DetailNormalStrength: 0.5
+    - _DetailScale: 100
+    - _DetailStrength: 0.7
+    - _Detail_Albedo_Adjustment: -0.155
+    - _Detail_Albedo_Strength: 0.46
+    - _Detail_Camera_Distance: 100
+    - _Detail_Mask_Adjustment: -0.164
+    - _Detail_Mask_Strength: 0.55
+    - _Detail_Material_Scale: 200
+    - _Detail_Normal_Adjustment: 1
+    - _Detail_Normal_Strength: 0.5
+    - _Detail_SIDE_Normal_Adjustment: -0.183
+    - _Detail_SIDE_Normal_Strength: 0.39
+    - _Distance: 78.11
+    - _MeshMaterialSlossiness: 0
+    - _MeshNormalStrength: 1
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _Saturation: 0.2
+    - _Scale: 80
+    - _SideGloss: -1
+    - _SideMaterialSlossiness: 0
+    - _SideMaterialTile: 10
+    - _SideNormalStrength: 0.5
+    - _Strength: 1
+    - _TopGloss: 0.3
+    - _TopMaterialGlossiness: 0
+    - _TopMaterialHeigthBlend: 60.15
+    - _TopMaterialStrength: 1
+    - _TopMaterialThreshold: 1
+    - _TopMaterialTile: 0.01
+    - _TopNormalStrength: 0.8
+    m_Colors: []
+  m_BuildTextureStacks: []

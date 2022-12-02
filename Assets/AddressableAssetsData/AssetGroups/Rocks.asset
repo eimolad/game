@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Rocks
+  m_EditorClassIdentifier: 
+  m_GroupName: Rocks
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 49c64a13900ea93449bdb49809221022
+  m_SerializeEntries:
+  - m_GUID: 687368997ecc0a2429388c1602a26cf2
+    m_Address: DF_C_Rock_1 (8)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a5b7dd830743e184ca7f195944bb1c65
+    m_Address: DF_C_Rock_1 (5)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 12fad98f00583ac41a04fe41c91a72e2
+    m_Address: DF_C_Rock_1 (7)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: aa8bb946d2e507d459a96cb53bb09015
+    m_Address: DF_C_Rock_1 (9)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 73034a2d8c3de7e4eafd56976b54b6b0
+    m_Address: DF_C_Rock_2 (1)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3328f29c05ae27a408f9048fdc79c97f
+    m_Address: DF_C_Rock_1 (6)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0b51841ec7dd67e4f9e1c725ab1a8986
+    m_Address: DF_C_Rock_1 (4)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 642a6a0b71c9aad45b580f1fa26155a4
+    m_Address: DF_C_Rock_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ec4fa91cd42fc2b45b3be2bbc3396dbf
+    m_Address: DF_C_Rock_1 (10)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: d5b719edea3f1c343b65eaafe63fbf10, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 7e5ef665b3ae97349839f62b368daa4c, type: 2}
+    - {fileID: 11400000, guid: 51c9fe2bdb7e6a447894e2270ee48a01, type: 2}

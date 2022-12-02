@@ -6,12 +6,13 @@ using UnityEngine;
 
 public class New_Material : MonoBehaviour
 {
-   
-    //public Material new_mat;
-     
+
+    public List<string> new_mat = new List<string>();
+
     void Start()
     {
-        GameObject.Find("Canvas_Game").GetComponent<Material_SET>().Set_obj(gameObject);
+        GameObject.Find("Address_load").GetComponent<Material_SET>().Set_obj(gameObject, new_mat);
+        //Debug.Log("меня зовут " + gameObject.name);
         //gameObject.GetComponent<MeshRenderer>().sharedMaterial = new_mat;
         //for (int i = 0; i < 1; i++)
         //{

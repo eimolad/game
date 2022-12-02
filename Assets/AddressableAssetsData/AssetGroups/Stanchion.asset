@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Stanchion
+  m_EditorClassIdentifier: 
+  m_GroupName: Stanchion
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 17a197b3a9bf3574ab3fc7074b081d4d
+  m_SerializeEntries:
+  - m_GUID: 7db0a3d4be138044b8ce1d7a3ab8cdf3
+    m_Address: DF_C_Wood_Support_Element_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 786ed595c49ffec49b78d329302a429d
+    m_Address: DF_C_Wood_Support (12)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c919324b331e8794d8919c5875d63123
+    m_Address: DF_C_Wood_Support (13)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 05361cd550e4af244ac5f4444337245c
+    m_Address: DF_C_Wood_Support (1)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c1337e631b249ca439142e0d0cb08ac3
+    m_Address: DF_C_Wood_Support (11)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d4f82fafbc9e2a547b6a534fc7322932
+    m_Address: DF_C_Wood_Support (14)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2836a6bd520d6b245ad1df43f3a16d33
+    m_Address: DF_C_Wood_Support_Element_1 (4)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ef5ad6ef6c522cd4cbaec00adc421b0e
+    m_Address: DF_C_Wood_Support (3)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b6b8ba3ebd1014e4d9b9859dc44942e5
+    m_Address: DF_C_Wood_Support (5)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3936b3d66e181d641b34bcb600ba4a4c
+    m_Address: DF_C_Wood_Support
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e3092dea66fbf514bb420911636d6aaf
+    m_Address: DF_C_Wood_Support_Element_1 (3)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ef9207811931abb4aa0d4b5ca953b398
+    m_Address: DF_C_Wood_Support_Element_1 (6)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ece4485690c0ca94a8baa4702d359245
+    m_Address: DF_C_Wood_Support (6)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ce808f2cd85a64f4d902d20dad7aa01f
+    m_Address: DF_C_Wood_Support (2)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 39331098316536b4c93b381a49778873
+    m_Address: DF_C_Wood_Support (9)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5c05b727a2321e342a2e7027fbd5eb9d
+    m_Address: DF_C_Wood_Support (7)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d8b299a6892bc4a44907b98c8a256cfa
+    m_Address: DF_C_Wood_Support (8)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a9462dd167e21ea448fbc0337cef52b3
+    m_Address: DF_C_Wood_Support_Element_1 (2)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e366251775166ac45b8a1ba547fc252b
+    m_Address: DF_C_Wood_Support (4)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6b992eedc8615a941a132369fccea925
+    m_Address: DF_C_Wood_Support (10)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 206d13e6e7e4c434eaeec057426094bb
+    m_Address: DF_C_Wood_Support_Element_1 (5)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3ca3955332f87bd4a9dcf095a02daf4c
+    m_Address: DF_C_Wood_Support_Element_1 (7)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: d5b719edea3f1c343b65eaafe63fbf10, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: e394d1e4243aa3f4083e6f19e0889954, type: 2}
+    - {fileID: 11400000, guid: 2c06d6c35da304f40a37f8aae757feef, type: 2}

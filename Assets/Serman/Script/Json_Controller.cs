@@ -78,13 +78,14 @@ public class Json_Controller : MonoBehaviour
         yield return null;
     }
 
-    public void Save_Material(List<string> name, List<Material> List_mat)
+    public void Save_Material(List<string> name, List<string> List_mat)
     {
         mat_root.list.Clear();
-        mat_root.materials.Clear(); 
+        mat_root.materials.Clear();
         for (int i = 0; i < name.Count; i++)
         {
             mat_root.list.Add(name[i]);
+            //mat_root.materials.Add(List_mat[i]);
             mat_root.materials.Add(List_mat[i]);
         }
         File.WriteAllText(Application.streamingAssetsPath + "/JSON_mat.json", JsonUtility.ToJson(mat_root));
@@ -92,8 +93,8 @@ public class Json_Controller : MonoBehaviour
     public void Load_Material()
     {
         //string read_file = File.ReadAllText(Application.streamingAssetsPath + "/JSON_mat.json");// для теста
-        string read_file = "{\"list\":[\"DF_C_Big_Bridge_1\",\"DF_C_Rock_2\",\"DF_C_Wood_Support_Element_1 (1)\"],\"materials\":[{\"instanceID\":31548},{\"instanceID\":31342},{\"instanceID\":31092}]}";
-        mat_root = JsonUtility.FromJson<MAT_LIST>(read_file);
+        string read_file = "{\"list\":[\"DF_C_Big_Bridge_1 (1)\",\"DF_C_Big_Bridge_1\",\"DF_C_Big_Bridge_2\",\"DF_C_Big_Bridge_3_1\",\"DF_C_Big_Bridge_3_2\",\"DF_C_Big_Bridge_3_3\",\"DF_C_Bridge_1_Border\",\"DF_C_Bridge_1_Brick_Floor\",\"DF_C_Bridge_1_Brick_Under_Floor\",\"DF_C_Bridge_1_Wall\",\"DF_C_Bridge_Section_1_1_Border\",\"DF_C_Bridge_Section_1_1_Wall\",\"DF_C_Bridge_Section_1_2_Border\",\"DF_C_Bridge_Section_1_2_Wall\",\"DF_C_Bridge_Section_2_Border\",\"DF_C_Bridge_Section_2_Wall\",\"DF_C_Bridge_Section_3_Border\",\"DF_C_Bridge_Section_3_Wall\",\"DF_C_Cental_Inside_Border\",\"DF_C_Cental_Inside_Wall\",\"DF_C_Central_Section_Border_1\",\"DF_C_Central_Section_Border_2\",\"DF_C_Central_Section_Door_1\",\"DF_C_Central_Section_Door_1_1\",\"DF_C_Central_Section_Door_1_2\",\"DF_C_Central_Section_Door_1_2_2\",\"DF_C_Central_Section_Door_2_1\",\"DF_C_Central_Section_Door_2_2\",\"DF_C_Central_Section_Door_3_1\",\"DF_C_Central_Section_Door_3_2\",\"DF_C_Central_Section_Inside_1_low\",\"DF_C_Central_Section_Inside_2_low\",\"DF_C_Central_Section_Wall_1\",\"DF_C_Central_Section_Wall_2\",\"DF_C_Central_Section_Wall_3\",\"DF_C_Central_Section_Wall_4\",\"DF_C_Enter_Group_Element_1_1\",\"DF_C_Enter_Group_Element_1_2\",\"DF_C_Enter_Group_Element_2_1\",\"DF_C_Enter_Group_Element_2_2\",\"DF_C_Enter_Group_Element_3_1\",\"DF_C_Enter_Group_Element_3_2\",\"DF_C_Enter_Group_Element_3_3\",\"DF_C_Floor_1\",\"DF_C_Floor_2\",\"DF_C_Floor_3\",\"DF_C_Floor_4\",\"DF_C_Floor_5\",\"DF_C_Floor_6\",\"DF_C_Floor_7\",\"DF_C_Floor_Border\",\"DF_C_Lava_Floor\",\"DF_C_Mountain\",\"DF_C_Outdoor\",\"DF_C_Pile_of_Snow (1)\",\"DF_C_Pile_of_Snow (10)\",\"DF_C_Pile_of_Snow (11)\",\"DF_C_Pile_of_Snow (12)\",\"DF_C_Pile_of_Snow (13)\",\"DF_C_Pile_of_Snow (14)\",\"DF_C_Pile_of_Snow (15)\",\"DF_C_Pile_of_Snow (16)\",\"DF_C_Pile_of_Snow (17)\",\"DF_C_Pile_of_Snow (18)\",\"DF_C_Pile_of_Snow (19)\",\"DF_C_Pile_of_Snow (2)\",\"DF_C_Pile_of_Snow (20)\",\"DF_C_Pile_of_Snow (21)\",\"DF_C_Pile_of_Snow (22)\",\"DF_C_Pile_of_Snow (23)\",\"DF_C_Pile_of_Snow (24)\",\"DF_C_Pile_of_Snow (25)\",\"DF_C_Pile_of_Snow (26)\",\"DF_C_Pile_of_Snow (27)\",\"DF_C_Pile_of_Snow (28)\",\"DF_C_Pile_of_Snow (29)\",\"DF_C_Pile_of_Snow (3)\",\"DF_C_Pile_of_Snow (30)\",\"DF_C_Pile_of_Snow (31)\",\"DF_C_Pile_of_Snow (32)\",\"DF_C_Pile_of_Snow (33)\",\"DF_C_Pile_of_Snow (34)\",\"DF_C_Pile_of_Snow (35)\",\"DF_C_Pile_of_Snow (36)\",\"DF_C_Pile_of_Snow (37)\",\"DF_C_Pile_of_Snow (38)\",\"DF_C_Pile_of_Snow (39)\",\"DF_C_Pile_of_Snow (4)\",\"DF_C_Pile_of_Snow (40)\",\"DF_C_Pile_of_Snow (41)\",\"DF_C_Pile_of_Snow (42)\",\"DF_C_Pile_of_Snow (43)\",\"DF_C_Pile_of_Snow (44)\",\"DF_C_Pile_of_Snow (45)\",\"DF_C_Pile_of_Snow (46)\",\"DF_C_Pile_of_Snow (47)\",\"DF_C_Pile_of_Snow (48)\",\"DF_C_Pile_of_Snow (49)\",\"DF_C_Pile_of_Snow (5)\",\"DF_C_Pile_of_Snow (50)\",\"DF_C_Pile_of_Snow (51)\",\"DF_C_Pile_of_Snow (52)\",\"DF_C_Pile_of_Snow (53)\",\"DF_C_Pile_of_Snow (54)\",\"DF_C_Pile_of_Snow (55)\",\"DF_C_Pile_of_Snow (56)\",\"DF_C_Pile_of_Snow (57)\",\"DF_C_Pile_of_Snow (58)\",\"DF_C_Pile_of_Snow (59)\",\"DF_C_Pile_of_Snow (6)\",\"DF_C_Pile_of_Snow (60)\",\"DF_C_Pile_of_Snow (61)\",\"DF_C_Pile_of_Snow (7)\",\"DF_C_Pile_of_Snow (8)\",\"DF_C_Pile_of_Snow (9)\",\"DF_C_Rock_1 (10)\",\"DF_C_Rock_1 (11)\",\"DF_C_Rock_1 (12)\",\"DF_C_Rock_1 (13)\",\"DF_C_Rock_1 (14)\",\"DF_C_Rock_1 (15)\",\"DF_C_Rock_1 (16)\",\"DF_C_Rock_1 (17)\",\"DF_C_Rock_1 (4)\",\"DF_C_Rock_1 (5)\",\"DF_C_Rock_1 (6)\",\"DF_C_Rock_1 (7)\",\"DF_C_Rock_1 (8)\",\"DF_C_Rock_1 (9)\",\"DF_C_Rock_2 (1)\",\"DF_C_Rock_2 (2)\",\"DF_C_Rock_2 (3)\",\"DF_C_Rock_2\",\"DF_C_Section_1_Border_1\",\"DF_C_Section_1_Border_2\",\"DF_C_Section_1_Wall_1\",\"DF_C_Section_1_Wall_2\",\"DF_C_Section_1_Wall_3\",\"DF_C_Section_2_Border_1\",\"DF_C_Section_2_Border_2\",\"DF_C_Section_2_Wall_1\",\"DF_C_Section_2_Wall_2\",\"DF_C_Section_2_Wall_3\",\"DF_C_Section_3_Border_1\",\"DF_C_Section_3_Border_2\",\"DF_C_Section_3_Wall_1\",\"DF_C_Section_3_Wall_2\",\"DF_C_Section_3_Wall_3\",\"DF_C_Stair_Border\",\"DF_C_Stair_Bridge_Brick_Floor\",\"DF_C_Stair_Bridge_Brick_Under_Floor\",\"DF_C_Stair_Wall\",\"DF_C_Stair_Wall_2\",\"DF_C_Tile_model_floor_1_1\",\"DF_C_Tile_model_floor_1_1_Instance\",\"DF_C_Tile_model_floor_1_1_Instance_10\",\"DF_C_Tile_model_floor_1_1_Instance_11\",\"DF_C_Tile_model_floor_1_1_Instance_12\",\"DF_C_Tile_model_floor_1_1_Instance_13\",\"DF_C_Tile_model_floor_1_1_Instance_2\",\"DF_C_Tile_model_floor_1_1_Instance_3\",\"DF_C_Tile_model_floor_1_1_Instance_4\",\"DF_C_Tile_model_floor_1_1_Instance_5\",\"DF_C_Tile_model_floor_1_1_Instance_6\",\"DF_C_Tile_model_floor_1_1_Instance_7\",\"DF_C_Tile_model_floor_1_1_Instance_8\",\"DF_C_Tile_model_floor_1_1_Instance_9\",\"DF_C_Tile_Stair_Bridge_Border\",\"DF_C_Tile_Stair_Bridge_Wall\",\"DF_C_Trim_model_borders_set_1_5\",\"DF_C_Trim_model_borders_set_1_5_Instance\",\"DF_C_Trim_model_borders_set_1_5_Instance_10\",\"DF_C_Trim_model_borders_set_1_5_Instance_11\",\"DF_C_Trim_model_borders_set_1_5_Instance_12\",\"DF_C_Trim_model_borders_set_1_5_Instance_13\",\"DF_C_Trim_model_borders_set_1_5_Instance_2\",\"DF_C_Trim_model_borders_set_1_5_Instance_3\",\"DF_C_Trim_model_borders_set_1_5_Instance_4\",\"DF_C_Trim_model_borders_set_1_5_Instance_5\",\"DF_C_Trim_model_borders_set_1_5_Instance_6\",\"DF_C_Trim_model_borders_set_1_5_Instance_7\",\"DF_C_Trim_model_borders_set_1_5_Instance_8\",\"DF_C_Trim_model_borders_set_1_5_Instance_9\",\"DF_C_Trim_steps_1\",\"DF_C_Trim_steps_2\",\"DF_C_Trim_steps_3\",\"DF_C_Tunnel_Floor_L\",\"DF_C_Tunnel_Floor_R\",\"DF_C_Tunnel_L\",\"DF_C_Tunnel_R\",\"DF_C_Vertical_1\",\"DF_C_Vertical_1_10\",\"DF_C_Vertical_1_11\",\"DF_C_Vertical_1_2\",\"DF_C_Vertical_1_3\",\"DF_C_Vertical_1_4\",\"DF_C_Vertical_1_5\",\"DF_C_Vertical_1_6\",\"DF_C_Vertical_1_7\",\"DF_C_Vertical_1_8\",\"DF_C_Vertical_1_9\",\"DF_C_Vertical_2\",\"DF_C_Vertical_2_10\",\"DF_C_Vertical_2_11\",\"DF_C_Vertical_2_2\",\"DF_C_Vertical_2_3\",\"DF_C_Vertical_2_4\",\"DF_C_Vertical_2_5\",\"DF_C_Vertical_2_6\",\"DF_C_Vertical_2_7\",\"DF_C_Vertical_2_8\",\"DF_C_Vertical_2_9\",\"DF_C_Wood_Support (1)\",\"DF_C_Wood_Support (10)\",\"DF_C_Wood_Support (11)\",\"DF_C_Wood_Support (12)\",\"DF_C_Wood_Support (13)\",\"DF_C_Wood_Support (14)\",\"DF_C_Wood_Support (2)\",\"DF_C_Wood_Support (3)\",\"DF_C_Wood_Support (4)\",\"DF_C_Wood_Support (5)\",\"DF_C_Wood_Support (6)\",\"DF_C_Wood_Support (7)\",\"DF_C_Wood_Support (8)\",\"DF_C_Wood_Support (9)\",\"DF_C_Wood_Support\",\"DF_C_Wood_Support_Element_1 (1)\",\"DF_C_Wood_Support_Element_1 (10)\",\"DF_C_Wood_Support_Element_1 (11)\",\"DF_C_Wood_Support_Element_1 (12)\",\"DF_C_Wood_Support_Element_1 (13)\",\"DF_C_Wood_Support_Element_1 (2)\",\"DF_C_Wood_Support_Element_1 (3)\",\"DF_C_Wood_Support_Element_1 (4)\",\"DF_C_Wood_Support_Element_1 (5)\",\"DF_C_Wood_Support_Element_1 (6)\",\"DF_C_Wood_Support_Element_1 (7)\",\"DF_C_Wood_Support_Element_1 (8)\",\"DF_C_Wood_Support_Element_1 (9)\",\"DF_C_Wood_Support_Element_1\"],\"materials\":[\"M_DF_C_Tile_model_floor_1\",\"M_DF_C_Tile_model_floor_1\",\"M_DF_C_Tile_model_floor_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Tile_model_brick_set_1\",\"M_DF_C_Tile_model_floor_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Tile_model_floor_1\",\"M_DF_C_Tile_model_floor_1\",\"M_DF_C_Tile_model_floor_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Tile_model_floor_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Tile_model_floor_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Tile_model_floor_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Tile_model_floor_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Tile_model_brick_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Tile_model_brick_set_1\",\"M_DF_C_Tile_model_brick_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Tile_model_brick_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Tile_model_brick_set_1\",\"M_DF_C_Central_Section_Inside_1\",\"M_DF_C_Central_Section_Inside_2\",\"M_DF_C_Tile_model_brick_set_1\",\"M_DF_C_Tile_model_floor_1\",\"M_DF_C_Tile_model_brick_set_1\",\"M_DF_C_Tile_model_brick_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Tile_model_brick_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Tile_model_brick_set_1\",\"M_DF_C_Tile_model_brick_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Tile_model_brick_set_1\",\"M_DF_C_Floor_2\",\"M_DF_C_Floor_2\",\"M_DF_C_Floor_2\",\"M_DF_C_Floor_2\",\"M_DF_C_Floor_2\",\"M_DF_C_Tile_model_floor_1\",\"M_DF_C_Tile_model_floor_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Lava_Floor\",\"M_DF_C_Mountain\",\"M_DF_C_Floor_Canyon\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Pile_of_Snow\",\"M_DF_C_Rock_1\",\"M_DF_C_Rock_1\",\"M_DF_C_Rock_1\",\"M_DF_C_Rock_1\",\"M_DF_C_Rock_1\",\"M_DF_C_Rock_1\",\"M_DF_C_Rock_1\",\"M_DF_C_Rock_1\",\"M_DF_C_Rock_1\",\"M_DF_C_Rock_1\",\"M_DF_C_Rock_1\",\"M_DF_C_Rock_1\",\"M_DF_C_Rock_1\",\"M_DF_C_Rock_1\",\"M_DF_C_Rock_2_Tunnel\",\"M_DF_C_Rock_2_Tunnel\",\"M_DF_C_Rock_2_Tunnel\",\"M_DF_C_Rock_2_Tunnel\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Tile_model_floor_1\",\"M_DF_C_Tile_model_brick_set_1\",\"M_DF_C_Tile_model_brick_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Tile_model_brick_set_1\",\"M_DF_C_Tile_model_floor_1\",\"M_DF_C_Tile_model_brick_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Tile_model_floor_1\",\"M_DF_C_Tile_model_brick_set_1\",\"M_DF_C_Tile_model_brick_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Tile_model_floor_1\",\"M_DF_C_Tile_model_floor_1\",\"M_DF_C_Tile_model_brick_set_1\",\"M_DF_C_Tile_model_brick_set_1\",\"M_DF_C_Tile_model_floor_1\",\"M_DF_C_Tile_model_floor_1\",\"M_DF_C_Tile_model_floor_1\",\"M_DF_C_Tile_model_floor_1\",\"M_DF_C_Tile_model_floor_1\",\"M_DF_C_Tile_model_floor_1\",\"M_DF_C_Tile_model_floor_1\",\"M_DF_C_Tile_model_floor_1\",\"M_DF_C_Tile_model_floor_1\",\"M_DF_C_Tile_model_floor_1\",\"M_DF_C_Tile_model_floor_1\",\"M_DF_C_Tile_model_floor_1\",\"M_DF_C_Tile_model_floor_1\",\"M_DF_C_Tile_model_floor_1\",\"M_DF_C_Tile_model_floor_1\",\"M_DF_C_Tile_model_floor_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Tunnel_Floor\",\"M_DF_C_Tunnel_Floor\",\"M_DF_C_Tunnel_Wall\",\"M_DF_C_Tunnel_Wall\",\"M_DF_C_Tile_model_brick_set_1\",\"M_DF_C_Tile_model_brick_set_1\",\"M_DF_C_Tile_model_brick_set_1\",\"M_DF_C_Tile_model_brick_set_1\",\"M_DF_C_Tile_model_brick_set_1\",\"M_DF_C_Tile_model_brick_set_1\",\"M_DF_C_Tile_model_brick_set_1\",\"M_DF_C_Tile_model_brick_set_1\",\"M_DF_C_Tile_model_brick_set_1\",\"M_DF_C_Tile_model_brick_set_1\",\"M_DF_C_Tile_model_brick_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Wood_Support\",\"M_DF_C_Wood_Support\",\"M_DF_C_Wood_Support\",\"M_DF_C_Wood_Support\",\"M_DF_C_Wood_Support\",\"M_DF_C_Wood_Support\",\"M_DF_C_Wood_Support\",\"M_DF_C_Wood_Support\",\"M_DF_C_Wood_Support\",\"M_DF_C_Wood_Support\",\"M_DF_C_Wood_Support\",\"M_DF_C_Wood_Support\",\"M_DF_C_Wood_Support\",\"M_DF_C_Wood_Support\",\"M_DF_C_Wood_Support\",\"M_DF_C_Wood_Support\",\"M_DF_C_Wood_Support\",\"M_DF_C_Wood_Support\",\"M_DF_C_Wood_Support\",\"M_DF_C_Wood_Support\",\"M_DF_C_Wood_Support\",\"M_DF_C_Wood_Support\",\"M_DF_C_Wood_Support\",\"M_DF_C_Wood_Support\",\"M_DF_C_Wood_Support\",\"M_DF_C_Wood_Support\",\"M_DF_C_Wood_Support\",\"M_DF_C_Wood_Support\",\"M_DF_C_Wood_Support\"]}";
+        mat_root = JsonUtility.FromJson<MAT_LIST>(read_file);        
     }
     public void Save_obj_xz(Dictionary<int, Vector3> bandles_vector)
     {
@@ -250,22 +251,10 @@ public class Json_Controller : MonoBehaviour
         //GetComponent<Base_React>().Attributes(json);
     }
 
-
-    [Serializable]
-    public class MAT_LIST
+    private void Awake()
     {
-        public List<string> list;
-        public List<Material> materials;
+        //Load_Material();
     }
-    [Serializable]
-    public class OBJ_XZ
-    {
-        //public string[] Items;
-        public Dictionary<int, Vector3> XZ;
-        public List<Vector3> vector;
-        public List<int> name;
-    }
-
     void Start()
     {
         val = new VALUE();
@@ -274,7 +263,8 @@ public class Json_Controller : MonoBehaviour
         Vector3 vector_player = Player_Hero.transform.position;
 
         // StartCoroutine(Dinamic_Load_OBJ(vector_player));
-
+        Load_Material();
+        //StartCoroutine(Load_Material());
 
         //Save_json();
         //for (int i = 0; i < 80; i++)
@@ -290,11 +280,12 @@ public class Json_Controller : MonoBehaviour
 
         string test = "{\"aid\":\"a77d8c75f89da60e1252c4467aabff3bb55f11fe3b642f084b5741634ed20f87\",\r\n\"equipment\":[5,3,3,4,5],\r\n\"name\":\"TestMode\",\r\n \"quest\":[{\"questStep\":0,\"dialog_count\":0,\"recipe\":\"false\"},\r\n\t\t\t{\"scroll\":0,\"vector\":[]}],\r\n\"experience\":\"0\",\r\n\"charId\":\"yvfl5-aikor-uwiaa-aaaaa-dmaau-4aqca-aaaii-q\"}";
 
-        string read_file = "{\"experience\": 0,\r\n\"level\": 1,\r\n\"strength\": 50,\r\n\"attack\" : 50,\r\n\"st_resist\" : 5,\r\n\"hp_regen\" : 2.5,\r\n\"dexterity\" : 30,\r\n\"attack_speed\" : 30,\r\n\"evasion\" : 3,\r\n\"accuracy\" : 3,\r\n\"intelligence\" : 40,\r\n\"m_attack\" : 40,\r\n\"mp_regen\" : 2,\r\n\"move_speed\" : 80,\r\n\"initial_attack_speed\" : 600,\r\n\"initial_evasion\" : 0,\r\n\"initial_accuracy\" : 70,\r\n\"critical_chance\" : 0,\r\n\"spell_speed\" : 0,\r\n\"cooldown\" : 0,\r\n\"defence\" : 0,\r\n\"m_resist\" : 0,\r\n\"set_bonus\" : 0}";
+        string read_file = "{\"experience\": 100,\r\n\"level\": 1,\r\n\"strength\": 50,\r\n\"attack\" : 50,\r\n\"st_resist\" : 5,\r\n\"hp_regen\" : 2.5,\r\n\"dexterity\" : 30,\r\n\"attack_speed\" : 30,\r\n\"evasion\" : 3,\r\n\"accuracy\" : 3,\r\n\"intelligence\" : 40,\r\n\"m_attack\" : 40,\r\n\"mp_regen\" : 2,\r\n\"move_speed\" : 80,\r\n\"initial_attack_speed\" : 600,\r\n\"initial_evasion\" : 0,\r\n\"initial_accuracy\" : 70,\r\n\"critical_chance\" : 0,\r\n\"spell_speed\" : 0,\r\n\"cooldown\" : 0,\r\n\"defence\" : 0,\r\n\"m_resist\" : 0,\r\n\"set_bonus\" : 0}";
 
 
         Load_json_Attributes(read_file);// для теста
         Load_json(test);// для теста
+
         //Save_atribute();
         //Save_json();
         //Debug.Log("!!");
@@ -306,6 +297,25 @@ public class Json_Controller : MonoBehaviour
 
         //load_obj_xz(vector_player);
     }
+
+    [Serializable]
+    public class MAT_LIST
+    {       
+        //public List<Material> materials;
+        public List<string> list;
+        public List<string> materials;
+       
+    }
+
+    [Serializable]
+    public class OBJ_XZ
+    {
+        //public string[] Items;
+        public Dictionary<int, Vector3> XZ;
+        public List<Vector3> vector;
+        public List<int> name;
+    }
+
     [Serializable]
     public class Quest
     {
@@ -379,13 +389,26 @@ public class Json_Controller : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Z))
-        {
-            //string test = "{\"aid\":\"a77d8c75f89da60e1252c4467aabff3bb55f11fe3b642f084b5741634ed20f87\",\r\n\"equipment\":[5,3,3,4,5],\r\n\"name\":\"Leviton3_D#529\",\r\n \"quest\":[{\"questStep\":0,\"dialog_count\":0,\"recipe\":\"false\"},\r\n\t\t\t{\"scroll\":0,\"vector\":[]}],\r\n\"experience\":\"0\",\r\n\"charId\":\"yvfl5-aikor-uwiaa-aaaaa-dmaau-4aqca-aaaii-q\"}";
+        //if (Input.GetKeyUp(KeyCode.Space))
+        //{
+        //    string read_file = File.ReadAllText(Application.streamingAssetsPath + "/JSON_mat.json");// для теста
+        //                                                                                            //string read_file = File.ReadAllText(Application.streamingAssetsPath + "/JSON_mat.json");// для теста
+        //                                                                                            //string read_file = "{\"list\":[\"DF_C_Big_Bridge_1\",\"DF_C_Big_Bridge_2\",\"DF_C_Big_Bridge_3_1\",\"DF_C_Big_Bridge_3_2\",\"DF_C_Big_Bridge_3_3\"],\"materials\":[\"M_DF_C_Tile_model_floor_1\",\"M_DF_C_Tile_model_floor_1\",\"M_DF_C_Trim_model_borders_set_1\",\"M_DF_C_Tile_model_brick_set_1\",\"M_DF_C_Tile_model_floor_1\"]}";
+        //                                                                                            //string[] data = File.ReadAllLines(Application.streamingAssetsPath + "/JSON_mat.json");
 
-            //string test = File.ReadAllText(Application.streamingAssetsPath + "/JSON.json");// для теста
-            //Load_json(test);// для теста
-        }
+        //    //for (int i = 0; i < data.Length; i++)
+        //    //{
+        //    //    mat_root = JsonUtility.FromJson<MAT_LIST>(data[i]); //Десериализуем из JSON в объект
+        //    //    Debug.Log(data[i]);
+
+        //    //}
+
+        //    mat_root = JsonUtility.FromJson<MAT_LIST>(read_file);
+
+        //    //name_obj_mat = mat_root.list_name_obj;
+        //    Debug.Log(mat_root.list.Count);
+        //    //Debug.Log(read_file);
+        //}
 
     }
 }

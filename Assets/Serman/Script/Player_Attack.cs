@@ -16,6 +16,7 @@ public class Player_Attack : MonoBehaviour
     AudioSource Fite_Aux;
     AudioSource Huck_Aux;
     VALUE VAL;
+    public bool Agresiya = false;
 
     void Start()
     {
@@ -60,6 +61,7 @@ public class Player_Attack : MonoBehaviour
     public void Attack_Hero()// атакуем врага (вызов из анимации)
     {
         Enemy.GetComponent<Helt>().Attack();
+        Agresiya=true;
         //GetComponent<AudioSource>().Play();
         //Debug.Log("атакую");
     }
@@ -83,12 +85,13 @@ public class Player_Attack : MonoBehaviour
         if (other.CompareTag("Weapon1") && Huck_attack)// попали мечем по герою
         {
             //Debug.Log(other.gameObject.name);
-            if(VAL.HP > 0) VAL.HP -= 10;
-            Particle_Sword.Stop();
-            Fite_Aux.Stop();
-            Huck_Aux.Play();
+            if (VAL.Cur_HP > 10) VAL.Cur_HP -= 10;
+            if (VAL.Cur_HP < 10) VAL.Cur_HP = 0;
+            //Particle_Sword.Stop();
+            //Fite_Aux.Stop();
+            //Huck_Aux.Play();
             Huck_attack = false;
-            anim.SetBool("Huck", true);// анимация повреждения
+           // anim.SetBool("Huck", true);// анимация повреждения
         }
            
     }

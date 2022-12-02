@@ -60,7 +60,7 @@ public class CameraController : MonoBehaviour
         }
         else zoom_row_pluse = false;
 
-        if (zoom > 25)
+        if (zoom > 10)
         {
             zoom_row_minus = true;
         }

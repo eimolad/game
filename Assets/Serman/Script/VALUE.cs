@@ -13,7 +13,10 @@ using Unity.Burst.CompilerServices;
 public class VALUE : MonoBehaviour
 {
     public string Player_Name;// имя игрока
+    public float Cur_HP;
     public float HP;
+    public float Cur_MP;
+    public float MP;
     public bool Quest_done;// степень выполнения квеста
     public int Dialog_count;// на какой стадии разговора закончили
     public int Step_quest;// храним шаги квеста
@@ -28,6 +31,8 @@ public class VALUE : MonoBehaviour
     GameObject Canvas_Game;
     List<GameObject> Scroll_All = new List<GameObject>();
     public Image Slider_HP_bar;
+    public Image Slider_MP_bar;
+    public Image Slider_exp_bar;
     public int Teleport;
 
     public int experience;// опыт
@@ -53,23 +58,31 @@ public class VALUE : MonoBehaviour
     public int defence;
     public int m_resist;
     public int set_bonus;
+    float TimeDelay = 1;
+    float TimeDelayHp;
+    float TimeDelayMp;
+    public int cur_experience;
 
+    public TMP_Text HP_regen;
+    public TMP_Text MP_regen;
     public Text Player_Name_Text;
     public TMP_Text Level_txt;
     public TMP_Text Rang_txt_for_bar;
     public TMP_Text HP_txt;
+    public TMP_Text MP_txt;
     public TMP_Text Teleport_txt;
     //public GameObject Shild_obj, Inventory_Shild, Shild_obj_Veapon_bar;//объекты щита
     public GameObject Svitok_obj;
     public GameObject Svitok_obj2;
     public GameObject Big_Svitok_obj;
     public GameObject Teleport_mess_obj;
-   GameObject Scroll;
+    GameObject Scroll;
     Transform First_Scroll;
     int Count_scrol_transform;
     //public GameObject Empty_shild;
     int obj_count = 0;
     public bool DoOnce_Save = true;
+    public Dictionary<string, Vector3> Teleport_Dictionary = new Dictionary<string, Vector3>();
 
 
     void Start()
@@ -77,7 +90,11 @@ public class VALUE : MonoBehaviour
         Player_Name_Text.text = Player_Name;
         Level_txt.text = level.ToString();
         Canvas_Game = GameObject.Find("Canvas_Game");
-        HP = 500f;
+        Cur_HP = 471f;
+        Cur_MP = 371f;
+        cur_experience = 0;
+        experience = 100;
+
 
         //Shild_obj = GameObject.Find("shild");
         //Svitok();
@@ -104,13 +121,62 @@ public class VALUE : MonoBehaviour
 
     void Update()
     {
+        if (cur_experience >= experience)
+        {
+            level++;
+            cur_experience = 0;
+            strength += Convert.ToInt32(Math.Ceiling(strength * 0.04f));
+            dexterity += Convert.ToInt32(Math.Ceiling(dexterity * 0.02f));
+            intelligence += Convert.ToInt32(Math.Ceiling(intelligence * 0.03f));
+            experience = experience * 2;
+        }
+        HP = 10 * strength;
+        MP = 10 * intelligence;
+        attack = strength;
+        m_attack = intelligence;
+        attack_speed = dexterity;
         Teleport_txt.text = Teleport.ToString();
-        float X = 10 * strength;
-        Slider_HP_bar.fillAmount = HP / X;
+        hp_regen = 0.05f * strength;
+        mp_regen = (int)(0.05 * intelligence);
+        HP_regen.text = "+" + hp_regen.ToString();
+        MP_regen.text = "+" + mp_regen.ToString();
+        if (Cur_HP < HP)
+        {
+            TimeDelayHp += Time.deltaTime;
+            if (TimeDelayHp >= TimeDelay)
+            {
+                Cur_HP += hp_regen;
+                TimeDelayHp = 0;
+                if (Cur_HP >= HP) Cur_HP = HP;
+            }
+        }
+        if (Cur_MP < MP)
+        {
+            TimeDelayMp += Time.deltaTime;
+            if (TimeDelayMp >= TimeDelay)
+            {
+                Cur_MP += mp_regen;
+                //cur_experience += 10;
+                TimeDelayMp = 0;
+                if (Cur_MP >= MP) Cur_MP = MP;
+            }
+        }
+
+        if (strength / 10 > 50) st_resist = 50;
+        else st_resist = strength / 10;
+        if (dexterity / 10 > 50) evasion = 50;
+        else evasion = dexterity / 10;
+        if (dexterity / 10 > 100) accuracy = 100;
+        else accuracy = dexterity / 10;
+        Slider_HP_bar.fillAmount = Cur_HP / HP;
+        HP_txt.text = ((int)Cur_HP).ToString() + "/" + HP;
         Player_Name_Text.text = Player_Name;// присваиваем имя игрока (берется из json)
-        Level_txt.text = level.ToString();// присваиваем опыт игрока (берется из json)
-        Rang_txt_for_bar.text = experience.ToString() + "/100";// присваиваем опыт игрока (берется из json)
-        HP_txt.text = HP.ToString() + "/" + 10 * strength;
+        Level_txt.text = level.ToString();// присваиваем уровень игрока (берется из json)
+        Slider_exp_bar.fillAmount = cur_experience * 1f / experience * 1f;
+        Rang_txt_for_bar.text = (Math.Ceiling((cur_experience * 1f / experience * 1f) * 100)).ToString() + " %";// присваиваем опыт игрока (берется из json)
+        Slider_MP_bar.fillAmount = Cur_MP / MP;
+        MP_txt.text = ((int)Cur_MP).ToString() + "/" + MP;
+
         Svitok_obj.SetActive(recipe);// показываем или нет свиток в инвентаре
         //Shild_obj.SetActive(Shild);// показываем или нет щит
         //Inventory_Shild.SetActive(Shild);// показываем или нет щит
@@ -183,7 +249,7 @@ public class VALUE : MonoBehaviour
                         instance.name = instance.name + i.ToString();
                         instance.GetComponent<Svitok_point>().point_location(scroll_vector[i]);// статические координаты свитка
                     }
-    
+
                 }
             }
             Destroy(Scroll);
@@ -213,11 +279,11 @@ public class VALUE : MonoBehaviour
     }
     public void Save_Svitok_Vector()
     {
-        if(DoOnce_Save)
+        if (DoOnce_Save)
         {
             Canvas_Game.GetComponent<Json_Controller>().Save_json();
             DoOnce_Save = false;
         }
-       
+
     }
 }

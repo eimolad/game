@@ -19,13 +19,13 @@ public class Teleport_list1 : MonoBehaviour
         canvas = GameObject.Find("Canvas_Game");
         player = GameObject.FindGameObjectWithTag("Player");
         telep = GameObject.FindGameObjectsWithTag("Teleport");
-
+        telep_choise = canvas.GetComponent<FindObjects_OFF_Action>().Seatch_not_action_obj("Teleport_choice");
     }
 
     void Update()
     {
         dist = Vector3.Distance(gameObject.transform.position, player.transform.position);
-        if (dist < 4 && Teleport == null && _IsEnable == true)
+        if (dist < 6 && Teleport == null && _IsEnable == true)
         {
             _IsEnable = false;
             Teleport = gameObject;
@@ -52,7 +52,7 @@ public class Teleport_list1 : MonoBehaviour
                 Teleport = null;
             }
         }
-        if (dist > 4)
+        if (dist > 7)
         {
             _IsEnable = true;
         }

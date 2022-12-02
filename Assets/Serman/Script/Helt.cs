@@ -26,8 +26,9 @@ public class Helt : MonoBehaviour
     {
         //Debug.Log(other.name);
 
-        if (other.CompareTag("Weapon1") && attack)//
-        {           
+        if (other.CompareTag("Weapon1") && attack && !other.CompareTag("Enemy"))//
+        {
+            //Debug.Log("Касание");
             attack = false;
             Sound_attack.Stop();
             Sound_Huck.Play();
@@ -76,7 +77,8 @@ public class Helt : MonoBehaviour
         //anim.Play("Huck_Head_event");
     }
     public void Huck()
-    {     
+    {
+        gameObject.GetComponent<Bot_Trol>().GO = true;
         count_helt++;
     
         if (count_helt >= 5)
@@ -101,6 +103,7 @@ public class Helt : MonoBehaviour
         //Debug.Log("Умер");
         //Sound_attack.Stop();
         Canvas_obj.GetComponent<VALUE>().Teleport_take(1);
+        Canvas_obj.GetComponent<VALUE>().cur_experience += 10;
         //Canvas_obj.GetComponent<Base_React>().Go("teleportUsed");
         gameObject.GetComponent<Collider>().enabled = false;
         player_Attack_skript.Stpo_Attack();

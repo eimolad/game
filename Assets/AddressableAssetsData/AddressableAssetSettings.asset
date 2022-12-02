@@ -1,0 +1,169 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 468a46d0ae32c3544b7d98094e6448a9, type: 3}
+  m_Name: AddressableAssetSettings
+  m_EditorClassIdentifier: 
+  m_DefaultGroup: 63b81a0f0492e8d4282e439c7e1da55e
+  m_CachedHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_OptimizeCatalogSize: 1
+  m_BuildRemoteCatalog: 1
+  m_BundleLocalCatalog: 0
+  m_CatalogRequestsTimeout: 0
+  m_DisableCatalogUpdateOnStart: 0
+  m_IgnoreUnsupportedFilesInBuild: 0
+  m_UniqueBundleIds: 0
+  m_NonRecursiveBuilding: 1
+  m_CCDEnabled: 0
+  m_maxConcurrentWebRequests: 500
+  m_ContiguousBundles: 1
+  m_StripUnityVersionFromBundleBuild: 0
+  m_DisableVisibleSubAssetRepresentations: 0
+  m_ShaderBundleNaming: 0
+  m_ShaderBundleCustomNaming: 
+  m_MonoScriptBundleNaming: 0
+  m_MonoScriptBundleCustomNaming: 
+  m_RemoteCatalogBuildPath:
+    m_Id: c1df9e7106d7c4643a1efec2ad6d1b43
+  m_RemoteCatalogLoadPath:
+    m_Id: 115b3e02b75874c45a46327e40253250
+  m_ContentStateBuildPath: 
+  m_BuildAddressablesWithPlayerBuild: 0
+  m_overridePlayerVersion: 
+  m_GroupAssets:
+  - {fileID: 11400000, guid: efd17f7668c7f3944ad8f5f386240b8b, type: 2}
+  - {fileID: 11400000, guid: 6416f7be2ab802e4287a3bd63d88ecb2, type: 2}
+  - {fileID: 11400000, guid: 4eff01d6eb3529445b3688230cf9f6dc, type: 2}
+  - {fileID: 11400000, guid: e79af04b6d1b4c449a1f14d5c5bbcae3, type: 2}
+  - {fileID: 11400000, guid: 8fe6f51a04aa3964180ec5316812893b, type: 2}
+  - {fileID: 11400000, guid: 37bba57957ea1264b9a18399983a3ae9, type: 2}
+  - {fileID: 11400000, guid: fe01f3936148e1c42b71ac9c301713f0, type: 2}
+  - {fileID: 11400000, guid: b03e1ed56abfb874980ca55599cf724c, type: 2}
+  - {fileID: 11400000, guid: 3238d26205e83244c92bddbd3bb1fba6, type: 2}
+  - {fileID: 11400000, guid: 0e2e7029538638046b8f578723bbc9cf, type: 2}
+  - {fileID: 11400000, guid: 55b0575319b14554193cef0e2f8f3797, type: 2}
+  - {fileID: 11400000, guid: 7c6bc1d864553f3499cac01747656c60, type: 2}
+  - {fileID: 11400000, guid: f28b8f61bc637e241ba219a4b9ee405e, type: 2}
+  - {fileID: 11400000, guid: 5c192c4c37b980f46b691701504d3749, type: 2}
+  - {fileID: 11400000, guid: f6972626cdabafc4ab3aff4f11f78866, type: 2}
+  - {fileID: 11400000, guid: faa8d41dbc1d1b549a0147ab83677beb, type: 2}
+  - {fileID: 11400000, guid: 6bdb24c06cfdde543a1eb5e70b08ec34, type: 2}
+  - {fileID: 11400000, guid: 8ba5e00bd08be6c44b239007eee0a075, type: 2}
+  - {fileID: 11400000, guid: 75d01f6dc02790149b9708d2897c6d19, type: 2}
+  - {fileID: 11400000, guid: d489d0fa9e32db74ea4bf2b4f8b485a6, type: 2}
+  - {fileID: 11400000, guid: 229980df910dc2f4a86f361b3e15d22c, type: 2}
+  - {fileID: 11400000, guid: f228fefe9fb11304ca2ce88fb7b221e5, type: 2}
+  - {fileID: 11400000, guid: e76f965f15e0f2a458ae62029670e4cf, type: 2}
+  - {fileID: 11400000, guid: 6df6446ee9286294ca5e19f26bc39c8c, type: 2}
+  m_BuildSettings:
+    m_CompileScriptsInVirtualMode: 0
+    m_CleanupStreamingAssetsAfterBuilds: 1
+    m_LogResourceManagerExceptions: 1
+    m_BundleBuildPath: Temp/com.unity.addressables/AssetBundles
+  m_ProfileSettings:
+    m_Profiles:
+    - m_InheritedParent: 
+      m_Id: 79402f6f4daec6549bc43ba98c151f2c
+      m_ProfileName: Default
+      m_Values:
+      - m_Id: 1b7b6ae66403e3d48819917aa267afe5
+        m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
+      - m_Id: 18b261a84e43e7a40b5d899e8a037602
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
+      - m_Id: 230cb27fbaedea146b54901c507bc3be
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
+      - m_Id: c1df9e7106d7c4643a1efec2ad6d1b43
+        m_Value: ServerData/[BuildTarget]
+      - m_Id: 115b3e02b75874c45a46327e40253250
+        m_Value: http://test.e-intellect.ru/bundles
+    - m_InheritedParent: 
+      m_Id: 5b849e253872d69478d7adef4a28afc7
+      m_ProfileName: serman
+      m_Values:
+      - m_Id: 1b7b6ae66403e3d48819917aa267afe5
+        m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
+      - m_Id: 18b261a84e43e7a40b5d899e8a037602
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
+      - m_Id: 230cb27fbaedea146b54901c507bc3be
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
+      - m_Id: c1df9e7106d7c4643a1efec2ad6d1b43
+        m_Value: ServerData/[BuildTarget]
+      - m_Id: 115b3e02b75874c45a46327e40253250
+        m_Value: http://test.e-intellect.ru/bundles
+    - m_InheritedParent: 
+      m_Id: 695831f2664ffb549b4d32cce713def8
+      m_ProfileName: ICP
+      m_Values:
+      - m_Id: 1b7b6ae66403e3d48819917aa267afe5
+        m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
+      - m_Id: 18b261a84e43e7a40b5d899e8a037602
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
+      - m_Id: 230cb27fbaedea146b54901c507bc3be
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
+      - m_Id: c1df9e7106d7c4643a1efec2ad6d1b43
+        m_Value: ServerData/[BuildTarget]
+      - m_Id: 115b3e02b75874c45a46327e40253250
+        m_Value: https://7dfyw-5aaaa-aaaan-qa4xq-cai.raw.ic0.app/bundles
+    - m_InheritedParent: 
+      m_Id: 106c32ba0a313bd4ea1cb7d8532627ea
+      m_ProfileName: serman2
+      m_Values:
+      - m_Id: 1b7b6ae66403e3d48819917aa267afe5
+        m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
+      - m_Id: 18b261a84e43e7a40b5d899e8a037602
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
+      - m_Id: 230cb27fbaedea146b54901c507bc3be
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
+      - m_Id: c1df9e7106d7c4643a1efec2ad6d1b43
+        m_Value: ServerData/[BuildTarget]
+      - m_Id: 115b3e02b75874c45a46327e40253250
+        m_Value: http://test2.e-intellect.ru/bundles
+    m_ProfileEntryNames:
+    - m_Id: 1b7b6ae66403e3d48819917aa267afe5
+      m_Name: BuildTarget
+      m_InlineUsage: 0
+    - m_Id: 18b261a84e43e7a40b5d899e8a037602
+      m_Name: Local.BuildPath
+      m_InlineUsage: 0
+    - m_Id: 230cb27fbaedea146b54901c507bc3be
+      m_Name: Local.LoadPath
+      m_InlineUsage: 0
+    - m_Id: c1df9e7106d7c4643a1efec2ad6d1b43
+      m_Name: Remote.BuildPath
+      m_InlineUsage: 0
+    - m_Id: 115b3e02b75874c45a46327e40253250
+      m_Name: Remote.LoadPath
+      m_InlineUsage: 0
+    m_ProfileVersion: 1
+  m_LabelTable:
+    m_LabelNames:
+    - default
+  m_SchemaTemplates: []
+  m_GroupTemplateObjects:
+  - {fileID: 11400000, guid: 92dcfc954776a714e9061e8a6dca6859, type: 2}
+  m_InitializationObjects: []
+  m_CertificateHandlerType:
+    m_AssemblyName: 
+    m_ClassName: 
+  m_ActivePlayerDataBuilderIndex: 3
+  m_DataBuilders:
+  - {fileID: 11400000, guid: ff4023ce71739884cb1eae80c5486bd2, type: 2}
+  - {fileID: 11400000, guid: 9d21084db2d172b4da22f47c3a54c5b3, type: 2}
+  - {fileID: 11400000, guid: 69d4d931a335d184c910d9a513dae49b, type: 2}
+  - {fileID: 11400000, guid: 64b3bd84b608eb14cbcd2cedf489413b, type: 2}
+  m_ActiveProfileId: 5b849e253872d69478d7adef4a28afc7
+  m_HostingServicesManager:
+    m_HostingServiceInfos: []
+    m_Settings: {fileID: 11400000}
+    m_NextInstanceId: 0
+    m_RegisteredServiceTypeRefs: []

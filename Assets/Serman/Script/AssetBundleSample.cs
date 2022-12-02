@@ -80,12 +80,12 @@ public class AssetBundleSample : MonoBehaviour
             if (Obj_List.Length > count)
             {
                 //Debug.Log("Запрашиваю файл - " + $"https://yzqe4-zyaaa-aaaan-qadaq-cai.raw.ic0.app/?asset={Convert.ToString(Obj_List[count])}");
-                Debug.Log("Запрашиваю файл - " + $"https://yzqe4-zyaaa-aaaan-qadaq-cai.raw.ic0.app/?asset={Convert.ToString(Obj_List[count])}");
+                Debug.Log("Запрашиваю файл - " + $"https://7vvqz-eqaaa-aaaan-qa3ja-cai.raw.ic0.app/{Convert.ToString(Obj_List[count])}");
 
-                // ссылка для теста  "https://e-intellect.ru/Bundle/" + Obj_List[count] + ".unity3d", Count_Load_Server
-                // ссылка на канистру  "https://yzqe4-zyaaa-aaaan-qadaq-cai.raw.ic0.app/?asset={Obj_List[count]}", Count_Load_Server
+                // ссылка для теста  "http://test.e-intellect.ru/Bundle/" + Obj_List[count] + ".unity3d", Count_Load_Server
+                // ссылка на канистру  "https://7vvqz-eqaaa-aaaan-qa3ja-cai.raw.ic0.app/{Obj_List[count]}", Count_Load_Server
 
-                WWW www = WWW.LoadFromCacheOrDownload(url: $"http://test.e-intellect.ru/Bundle/{Obj_List[count]}"+ ".unity3d", Count_Load_Server);//.unity3d
+                WWW www = WWW.LoadFromCacheOrDownload(url: $"http://test.e-intellect.ru/Bundle/{Obj_List[count]}" + ".bundle", Count_Load_Server);//.unity3d
                 yield return www;
 
                 AssetBundle assetBundle = www.assetBundle;

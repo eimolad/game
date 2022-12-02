@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4363792843831998247
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4012766922140794382}
+  m_Layer: 0
+  m_Name: Botinki_transform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4012766922140794382
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4363792843831998247}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6694626293373257318}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6694626293373257248
 GameObject:
   m_ObjectHideFlags: 0
@@ -1946,6 +1977,7 @@ GameObject:
   - component: {fileID: -5251105176392148821}
   - component: {fileID: 4175124852546858174}
   - component: {fileID: 6660324250779630078}
+  - component: {fileID: 4622540459300710397}
   m_Layer: 0
   m_Name: trol
   m_TagString: Enemy
@@ -1974,6 +2006,7 @@ Transform:
   - {fileID: 6694626293373257401}
   - {fileID: 6694626293373257365}
   - {fileID: 6169138120814449084}
+  - {fileID: 4012766922140794382}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2018,7 +2051,7 @@ NavMeshAgent:
   m_Height: 2
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
+  m_ObstacleAvoidanceType: 0
 --- !u!114 &6694626293373257233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2031,8 +2064,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6c65711c622e94b867d40ae58cf0db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GO: 0
   portal: {x: 0, y: 0, z: 0}
   Distance_Plaer: 25
+  Agreses: 0
 --- !u!136 &-5251105176392148821
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2044,9 +2079,9 @@ CapsuleCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.3
-  m_Height: 1.5
+  m_Height: 1.551722
   m_Direction: 1
-  m_Center: {x: 0, y: 0.8, z: 0}
+  m_Center: {x: 0, y: 0.7741389, z: 0}
 --- !u!114 &4175124852546858174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2451,6 +2486,25 @@ MonoBehaviour:
   Sound_attack: {fileID: 0}
   Sound_Huck: {fileID: 0}
   Sound_Death: {fileID: 0}
+--- !u!114 &4622540459300710397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6694626293373257307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f695809bcf6016a458428a8913c2578c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player_Botinki: {fileID: 4012766922140794382}
+  Click_On:
+    serializedVersion: 2
+    m_Bits: 8
+  up_obj: 0.5
+  speed_down: 0.001
+  set_up: -0.02
 --- !u!1 &6694626293373257308
 GameObject:
   m_ObjectHideFlags: 0

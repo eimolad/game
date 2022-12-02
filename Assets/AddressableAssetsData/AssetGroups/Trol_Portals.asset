@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Trol_Portals
+  m_EditorClassIdentifier: 
+  m_GroupName: Trol_Portals
+  m_Data:
+    m_SerializedData: []
+  m_GUID: c520ec36a6bdee34a8e3a6f13fc7475a
+  m_SerializeEntries:
+  - m_GUID: 731c0be4bf2b1d743af8dddb93ed8c39
+    m_Address: Trol_Portals
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8b523032c72300a41aa9ccbae5819265
+    m_Address: Trol_Portals2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: d5b719edea3f1c343b65eaafe63fbf10, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: afe9427a324e899408480f13489110bc, type: 2}
+    - {fileID: 11400000, guid: aefd9d5dec07a954eb7f2e5284caae14, type: 2}

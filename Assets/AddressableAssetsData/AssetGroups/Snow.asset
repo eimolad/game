@@ -1,0 +1,269 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Snow
+  m_EditorClassIdentifier: 
+  m_GroupName: Snow
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 7bb731194e7b0c14e8afee9e8f099290
+  m_SerializeEntries:
+  - m_GUID: 1992e39b1a5dca1449efbfb1f5dd3215
+    m_Address: DF_C_Pile_of_Snow (8)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5e7f0f731a4a0744a8c6760569f1ef90
+    m_Address: DF_C_Pile_of_Snow (4)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cc1d0e285eb29674fa08c73e1c96670c
+    m_Address: DF_C_Pile_of_Snow (50)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d7dda9e6e294de744a9df61d11b80b72
+    m_Address: DF_C_Pile_of_Snow (7)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 27577d8560516854ba2ddc6acb6098dd
+    m_Address: DF_C_Pile_of_Snow (24)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fef64beb3683e6c4097932957f3a488f
+    m_Address: DF_C_Pile_of_Snow (12)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ff0174c60eebdcb468c982c595e6058f
+    m_Address: DF_C_Pile_of_Snow (20)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4b0b85aef281c14418de364b474b64b3
+    m_Address: DF_C_Pile_of_Snow (32)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7bcdc52fb6bb7b44b9a80bf7e330b788
+    m_Address: DF_C_Pile_of_Snow (42)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8a471b4666e34414f921ccf6497ba2c5
+    m_Address: DF_C_Pile_of_Snow (44)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 54f91921d9305ab4f8b1e8dd6a3fe9be
+    m_Address: DF_C_Pile_of_Snow (3)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d76097ccb7a1f2f4ea1fea1320f36a03
+    m_Address: DF_C_Pile_of_Snow (19)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6112fcb460dc4194cbcf58909818c3cf
+    m_Address: DF_C_Pile_of_Snow (28)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 35639b764f16ca048aacfd2ab7c9a5c8
+    m_Address: DF_C_Pile_of_Snow (2)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1eb9d79bb4fb8c448ae041057061d812
+    m_Address: DF_C_Pile_of_Snow (57)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 003633c76ee875343a8df9461fc4ccb0
+    m_Address: DF_C_Pile_of_Snow (34)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0ca3f27001784414dab3371d8b8b48e5
+    m_Address: DF_C_Pile_of_Snow (29)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2c2e6049f95223a4cba14d1bd74e352b
+    m_Address: DF_C_Pile_of_Snow (6)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b93d46cdf55aba64bb17cecf523b887b
+    m_Address: DF_C_Pile_of_Snow (16)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 867025854094d874ebf15cd8270548ca
+    m_Address: DF_C_Pile_of_Snow (59)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9c9c7da97ee535f4aa74ecb7e9845f92
+    m_Address: DF_C_Pile_of_Snow (54)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 26107333fd6f08a4eb00d2d4bdef9329
+    m_Address: DF_C_Pile_of_Snow (1)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0ca84e211c34d5849822877a87912821
+    m_Address: DF_C_Pile_of_Snow (48)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5067fd9d7bbc6894c88441406949aa0c
+    m_Address: DF_C_Pile_of_Snow (36)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a3630ff9202a70d4ca752a43e08899f8
+    m_Address: DF_C_Pile_of_Snow (35)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7e32f3e4f6acfe744abe859b741ad680
+    m_Address: DF_C_Pile_of_Snow (26)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 245b3dc706b7b994f9a8c7ad7cea08ad
+    m_Address: DF_C_Pile_of_Snow (38)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e0b84e043c346294d983dfd454ee11dd
+    m_Address: DF_C_Pile_of_Snow (33)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a9a113fd860673b45b841b87019c3ff3
+    m_Address: DF_C_Pile_of_Snow (22)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: dac3882f2315dad4080372f212a7a517
+    m_Address: DF_C_Pile_of_Snow (14)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 16f65aff698555a40991bc2eec4c2ca7
+    m_Address: DF_C_Pile_of_Snow (52)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 427cee469a5d78146ae7993720c942b8
+    m_Address: DF_C_Pile_of_Snow (43)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c26c707caeff68f43ba0f01aa1f1a4cc
+    m_Address: DF_C_Pile_of_Snow (47)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: bc91c4d8a084e8645a8160bcee305166
+    m_Address: DF_C_Pile_of_Snow (11)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b375fd839658e8b45bd201e59ad83dde
+    m_Address: DF_C_Pile_of_Snow (37)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 54c5edb250e3ca64b83ee95e1a72add1
+    m_Address: DF_C_Pile_of_Snow (9)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8fc150db28ad0f14b87d3d0db681d3e6
+    m_Address: DF_C_Pile_of_Snow (53)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 58526a435e356d446a66354c4a8159f4
+    m_Address: DF_C_Pile_of_Snow (56)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 520bc4522cfbdff4cb7d76fb5e4c87aa
+    m_Address: DF_C_Pile_of_Snow (21)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8ac1915421f1fa44f872920d8cadb7bc
+    m_Address: DF_C_Pile_of_Snow (51)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6a682f352db8194409c5192cbf82fd7d
+    m_Address: DF_C_Pile_of_Snow (46)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ec252315929d96d47ae28751fc101939
+    m_Address: DF_C_Pile_of_Snow (25)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 41b2b8c5bc7c34d4781ee8cbf1b56b8e
+    m_Address: DF_C_Pile_of_Snow (39)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f836b156fa13c8a48bf4c1fae53bd104
+    m_Address: DF_C_Pile_of_Snow (49)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 657e06e085618a74e9011f38ded0e05b
+    m_Address: DF_C_Pile_of_Snow (17)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 670b510a136d0244e9ad06915308929b
+    m_Address: DF_C_Pile_of_Snow (40)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8e6f65e520a14e84e8a2187c256f3a85
+    m_Address: DF_C_Pile_of_Snow (30)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ed17ff4fff202d042b941a68eb228d5c
+    m_Address: DF_C_Pile_of_Snow (41)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8c7f9f9d3ba1128428936cdf4fb879b6
+    m_Address: DF_C_Pile_of_Snow (13)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8614faed67d91064fac1bf3708ef592f
+    m_Address: DF_C_Pile_of_Snow (45)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2b04cc6041bec9940a14bb5c27edd9ad
+    m_Address: DF_C_Pile_of_Snow (61)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 02947bc5547f3104db50a830d725cb9a
+    m_Address: DF_C_Pile_of_Snow (60)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 55a1bef8b3b23bd4dac658d3c2434e10
+    m_Address: DF_C_Pile_of_Snow (5)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f1d6b57142aa666489e321a0eab30f4c
+    m_Address: DF_C_Pile_of_Snow (27)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9ac0d43cc59427a45a6b8716fd55f162
+    m_Address: DF_C_Pile_of_Snow (23)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 91d54da1c3619764398b9a0b1cd589f0
+    m_Address: DF_C_Pile_of_Snow (18)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: bae28e03afa844c409002ce9763d4746
+    m_Address: DF_C_Pile_of_Snow (31)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0c4899b1f0aaa1549a875088559ecc18
+    m_Address: DF_C_Pile_of_Snow (58)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5192b01cf48301a448080476cb1e30c1
+    m_Address: DF_C_Pile_of_Snow (10)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5db6ab74fae35ed4ab629e52f154f039
+    m_Address: DF_C_Pile_of_Snow (55)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4615fe1ad3eaa5343ba4400992ae9de5
+    m_Address: DF_C_Pile_of_Snow (15)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: d5b719edea3f1c343b65eaafe63fbf10, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: d820dd47be2f8944ca89ae8f8ab4b4be, type: 2}
+    - {fileID: 11400000, guid: 0815fe89db7be7140a8061fba78dbcff, type: 2}

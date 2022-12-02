@@ -1,0 +1,321 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: City
+  m_EditorClassIdentifier: 
+  m_GroupName: City
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 3188a9e512834864c9108b818c9d1f52
+  m_SerializeEntries:
+  - m_GUID: 6b9c070102029e44c952ff9cee8ade64
+    m_Address: DF_C_Bridge_Section_1_1_Border
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 364f5aa6b5ec7bd4da7aefc2cb591e12
+    m_Address: DF_C_Bridge_Section_1_1_Wall
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2a3fe40e1a8fdd54ca6df740938948b5
+    m_Address: DF_C_Bridge_Section_1_2_Border
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2f4177cd556de67429fc1916b906df13
+    m_Address: DF_C_Bridge_Section_1_2_Wall
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a9fae71500eb95240869ca05220d140f
+    m_Address: DF_C_Bridge_Section_2_Border
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1836ebef8e6b9fd4eabec537ad4539eb
+    m_Address: DF_C_Bridge_Section_2_Wall
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b2f28cb613ada31449727297437a8a44
+    m_Address: DF_C_Bridge_Section_3_Border
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5ec99aa129b69fe4a9b953402b94143c
+    m_Address: DF_C_Bridge_Section_3_Wall
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8d03574e6ef33604fab3b4a7afb0de82
+    m_Address: DF_C_Cental_Inside_Border
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a8606a736cb85054dbfcc0bdfb2bfa83
+    m_Address: DF_C_Cental_Inside_Wall
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ec8a936716302544e92febcfb64d8371
+    m_Address: DF_C_Central_Section_Border_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c91b9d07d7ce32b4c81284a7d7065d0d
+    m_Address: DF_C_Central_Section_Wall_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0bc276b173b74104ca1f94d8823224b6
+    m_Address: DF_C_Enter_Group_Element_1_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c8269708e47a9dd41b032a5f889041b9
+    m_Address: DF_C_Enter_Group_Element_2_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e4b4f7b99367b44448caf4074a7893e4
+    m_Address: DF_C_Enter_Group_Element_2_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 18f86bea24899e84d9aa1c103dc8e351
+    m_Address: DF_C_Enter_Group_Element_1_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f25f10f883923ca4e9e40e8104d75e3a
+    m_Address: DF_C_Enter_Group_Element_3_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 42032ee7bcfcd7c49950b441b98bbddf
+    m_Address: DF_C_Enter_Group_Element_3_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: dfa46666e714a3f46a7a5c4de43a3373
+    m_Address: DF_C_Enter_Group_Element_3_3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c92ec380f74162242a1a389257b69f61
+    m_Address: DF_C_Floor_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9f61b35a7be502543a8c493e99af9980
+    m_Address: DF_C_Floor_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f48ceebba1c4b124b8e712d0f9113dea
+    m_Address: DF_C_Floor_7
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c40a8111940004f458eed5cc091b6114
+    m_Address: DF_C_Floor_6
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: dd79a333c60a5604b931724a84aebd25
+    m_Address: DF_C_Floor_5
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: dbe368b871adc6547ac68f55dfa564aa
+    m_Address: DF_C_Floor_3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8307db1b223fe444eaa7d4b66763c13a
+    m_Address: DF_C_Floor_4
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b85eae3b644603a4b9f3fb990fb33e83
+    m_Address: DF_C_Floor_Border
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d07a2c3f76b8fe746af3719f6748e959
+    m_Address: DF_C_Mountain
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 096e247cee841db42980f84253695deb
+    m_Address: DF_C_Section_1_Border_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4f33f9e88ca1bef498bc3ac33ed24394
+    m_Address: DF_C_Section_2_Border_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 015bab6ce56b552458e4e4d2295c7ad2
+    m_Address: DF_C_Section_2_Border_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ca04bd13210e42845843c2e2741cbe22
+    m_Address: DF_C_Section_2_Wall_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5dfa23a83af16ee4ea3e2b3d76cfea51
+    m_Address: DF_C_Section_2_Wall_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5115ae0d360043641bd43c492b30b4a6
+    m_Address: DF_C_Section_3_Border_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d206e8332ed84c541b45735852f0d99f
+    m_Address: DF_C_Section_3_Border_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: db1323d4ab06984468fb04bcf7dcdc56
+    m_Address: DF_C_Section_3_Wall_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 455fff13045a95643bcc8a1746f04004
+    m_Address: DF_C_Section_3_Wall_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e6746a64b20775842a4714be83f8d305
+    m_Address: DF_C_Stair_Border
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2b21bf8c0e9746947a23b0bbfec87b88
+    m_Address: DF_C_Stair_Bridge_Brick_Floor
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: bea06d2d19ce9cb408c69103f8935d35
+    m_Address: DF_C_Stair_Wall
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 60993dd4cff30d74297d05197d3b2478
+    m_Address: DF_C_Stair_Wall_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 89c2ccd899fb2204eb95f281d12e3800
+    m_Address: DF_C_Tile_model_floor_1_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: da81b3b4bff8fe74fb13e6eaa5b59e20
+    m_Address: DF_C_Tile_model_floor_1_1_Instance_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f2e584d524332224fba97ad9d487da90
+    m_Address: DF_C_Tile_model_floor_1_1_Instance_3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6b27bd580b2395b4ab141b5d806b0dcc
+    m_Address: DF_C_Tile_model_floor_1_1_Instance_4
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e179685cfa0b7934d837b1c5dce35ec4
+    m_Address: DF_C_Tile_model_floor_1_1_Instance_6
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: bb52c5b92cc5f9748a0d31d8b057d285
+    m_Address: DF_C_Tile_model_floor_1_1_Instance_7
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e1fe9429317cadd4a962aec784e15ac5
+    m_Address: DF_C_Tile_model_floor_1_1_Instance_8
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 61ec63cb1534b3148bde87e3980592ef
+    m_Address: DF_C_Tile_model_floor_1_1_Instance_9
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7a475139fcf05f748a5047fcd200e463
+    m_Address: DF_C_Tile_model_floor_1_1_Instance_10
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 26b2f0d55a8964948806486f5d9d52d3
+    m_Address: DF_C_Tile_model_floor_1_1_Instance_11
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a035376548ef942409771e7e24be422f
+    m_Address: DF_C_Tile_model_floor_1_1_Instance_12
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 65ddbe2448166f545a976271160b59e0
+    m_Address: DF_C_Tile_model_floor_1_1_Instance_13
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e6771b567ed1fc44d8070752b58ef039
+    m_Address: DF_C_Tile_Stair_Bridge_Border
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2a8e9285a4555b240a32036cdaa1e1e2
+    m_Address: DF_C_Trim_model_borders_set_1_5
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 49171f0b83789224580246e363a714cd
+    m_Address: DF_C_Trim_model_borders_set_1_5_Instance
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 36c21e8e7c4207f4eb4dd178baefceef
+    m_Address: DF_C_Trim_model_borders_set_1_5_Instance_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c327551fa990406458e3fbfd2a226bb3
+    m_Address: DF_C_Trim_model_borders_set_1_5_Instance_3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fc0363069ea653d44be29f51d1eb9238
+    m_Address: DF_C_Trim_model_borders_set_1_5_Instance_4
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ab98b3aa664d0174a979a8f8fc58e936
+    m_Address: DF_C_Trim_model_borders_set_1_5_Instance_5
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 92d087d295f66d74ebe222700846f594
+    m_Address: DF_C_Trim_model_borders_set_1_5_Instance_6
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b389048f5b65bbf46a5eb54ec2bee431
+    m_Address: DF_C_Trim_model_borders_set_1_5_Instance_7
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: da3b92e84b1bbf542bbfb0254e88b4fd
+    m_Address: DF_C_Trim_model_borders_set_1_5_Instance_8
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a606691de06e20849abfb975e936cdad
+    m_Address: DF_C_Trim_model_borders_set_1_5_Instance_9
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3575164eeb7bfef4eb4ca0722c970d8c
+    m_Address: DF_C_Trim_model_borders_set_1_5_Instance_10
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f6de5cb026ee1bb458f0a782e3de4b5d
+    m_Address: DF_C_Trim_model_borders_set_1_5_Instance_11
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4aa8500236b464549ace22f2837bcbbe
+    m_Address: DF_C_Trim_model_borders_set_1_5_Instance_12
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 857bb7da5e51e484787a33240128a810
+    m_Address: DF_C_Trim_model_borders_set_1_5_Instance_13
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: bb68ce63dbf46ff4a9974517062c5488
+    m_Address: DF_C_Tile_model_floor_1_1_Instance_5
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6f50e84e2aa89234b8180acab21833e3
+    m_Address: DF_C_Trim_steps_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6c493ad624573a14d8ad298c91793c3e
+    m_Address: DF_C_Trim_steps_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7a460f5286572894185a1951358641ac
+    m_Address: DF_C_Trim_steps_3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c9193083b63a031419aa0fa206e0bb2f
+    m_Address: DF_C_Central_Section_Border_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ed892f11ff40629438983ac221aaa6c9
+    m_Address: DF_C_Central_Section_Wall_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: d5b719edea3f1c343b65eaafe63fbf10, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: aa858bbf073bf5447965bf3cbaff334b, type: 2}
+    - {fileID: 11400000, guid: 61e7edd4cd001b348b3a8157113900f5, type: 2}

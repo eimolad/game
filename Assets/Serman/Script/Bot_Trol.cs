@@ -14,8 +14,8 @@ public class Bot_Trol : MonoBehaviour
     bool Stop = false;
     Player_Attack Player_Attack;
     GameObject Player_Hero;
-    
-    bool GO = false;
+
+    public bool GO = false;
     public Vector3 portal;
     public float Distance_Plaer = 25f;
     Outline Contur;
@@ -23,6 +23,7 @@ public class Bot_Trol : MonoBehaviour
     private int count;
     bool Go_Portal = false;
     bool start = false;
+    public bool Agreses = false;
 
     void Start()
     {
@@ -39,9 +40,10 @@ public class Bot_Trol : MonoBehaviour
     private void OnMouseDown()
     {
         Player_Attack.Attack_Click(gameObject);// передаем игроку объект по которому был клик
-        GO = true;
-        start = true;
-        Go_Portal = false;
+        //Stop = true;
+        //GO = true;
+        //start = true;
+        //Go_Portal = false;
     }
     void OnMouseEnter()
     {
@@ -51,7 +53,16 @@ public class Bot_Trol : MonoBehaviour
     {
         Contur.enabled = false;// выключаем скрипт подсвети объекта
     }
-    void Update()
+
+    public void Help_Brathers()
+    {
+        GO = true;
+        start = true;
+        Go_Portal = false;
+        Debug.Log("помогаем");
+        Agreses = true;
+    }
+    void FixedUpdate()
     {
         if (!Go_Portal && Bot_Agent.enabled) transform.LookAt(Player_Hero.transform.position);// поворот в сторону игрока
 
@@ -61,12 +72,21 @@ public class Bot_Trol : MonoBehaviour
     public void Death()
     {
         anim.SetBool("Attack", false);
-        anim.SetBool("Death", true);        
+        anim.SetBool("Death", true);
     }
     void Go_in_Hero()
     {
         var dist = Vector3.Distance(transform.position, Player_Hero.transform.position); // дистанци€ до геро€
         var dist_portal = Vector3.Distance(transform.position, portal); // дистанци€ до портала
+
+        if (dist < 40 && !Agreses)
+        {
+           if(Player_Hero.GetComponent<Player_Attack>().Agresiya)// если герой агресивный и р€дом
+            {
+                Help_Brathers();
+            }
+        }
+
         if (GO)
         {
             if (!Go_Portal)
@@ -109,7 +129,7 @@ public class Bot_Trol : MonoBehaviour
             anim.SetBool("Huck", false);
         }
 
-        if (dist_portal > 20 && start) // если портал далеко, возврат к нему
+        if (dist_portal > 40 && start) // если портал далеко, возврат к нему
         {
             //Debug.Log("далеко от портала");
             Go_Portal = true;
@@ -117,6 +137,7 @@ public class Bot_Trol : MonoBehaviour
 
         if (dist_portal < 3 && Go_Portal) // подошли к порталу
         {
+            Agreses = false;
             start = false;
             Bot_Agent.isStopped = true;
             GO = false;

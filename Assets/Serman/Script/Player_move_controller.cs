@@ -37,7 +37,7 @@ public class Player_move_controller : MonoBehaviour
         if (Input.GetMouseButtonDown(1))// нажата правая кнопка мыши
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            //Debug.Log("Засекаю" + Click_Mouse);
+            //Debug.Log("Засекаю" + ray);
             Destroy(GameObject.FindWithTag("Point"));
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit, 100, Click_On))// задаем вектор куда идти
@@ -57,6 +57,20 @@ public class Player_move_controller : MonoBehaviour
         }
         if (Go) GO();
         else GO2();
+    }
+    public void Click_Go_to_obj(Vector3 koordinata)
+    {
+        myAgent.SetDestination(koordinata);       
+        myAgent.stoppingDistance = 0.1f;
+        //StartCoroutine(Search_Canvas.GetComponent<Json_Controller>().Dinamic_Load_OBJ(hit.point));
+        Go = true;
+        Go_to_obj = false;
+        count = 0;
+        Destroy(Del_Obj);
+        _animator.SetFloat(ANIMATOR_PARAM_Idle, 1);
+        gameObject.GetComponent<Player_Attack>().Stop_attack = false;
+        Del_Obj = Instantiate(Point_Decal_Obj, koordinata, Quaternion.identity);
+        GO();
     }
     void GO()
     {

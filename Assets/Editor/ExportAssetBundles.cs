@@ -53,38 +53,160 @@ public class ExportAssetBundles : MonoBehaviour
         //GameObject Search_Canvas = GameObject.Find("Canvas_Game");// найти объект
         //Search_Canvas.GetComponent<Json_Controller>().Save_obj_xz(Name_num_obj, xz_obj);
     }
+    [MenuItem("Assets/Добавить в первый саисок загрузки")]
+    static void Add_Obj_List()
+    {
+        List<string> names = new List<string>();
+        //List <Material> list_materials = new List<Material>();
+        //List<string> list_materials_name = new List<string>();
+
+        var Prefabs = LoadAllPrefabsAt("Assets/Resources/");// список прифабов в указанной папке
+        Debug.Log("Найдено прифабов " + Prefabs.Count);
+
+        for (int i = 0; i < Prefabs.Count; i++)// перебераем полученый массив
+        {
+            Object prefab = new Object();// создаем новый объект
+            prefab = Prefabs[i];
+            names.Add(prefab.name);// добавляем в список имя объекта     
+        }
+        GameObject Address_load = GameObject.Find("Address_load");// найти объект
+
+        for (int i = 0; i < names.Count; i++) // перебираем список имен полученых объектов
+        {
+            bool find = false;
+
+            for (int j = 0; j < Address_load.GetComponent<Addressable_Load>().First_List.Count; j++)// проверка общего списка, на наличие совподений
+            {
+                if (names[i] == Address_load.GetComponent<Addressable_Load>().First_List[j])// если нашли совподения
+                {
+                    find = true;
+                }
+            }
+            for (int j = 0; j < Address_load.GetComponent<Addressable_Load>()._mList.Count; j++)// проверка общего списка, на наличие совподений
+            {
+                if (names[i] == Address_load.GetComponent<Addressable_Load>()._mList[j])// если нашли совподения
+                {
+                    Address_load.GetComponent<Addressable_Load>()._mList.RemoveAt(j);
+                }
+            }
+            if (!find)
+            {
+                Address_load.GetComponent<Addressable_Load>().First_List.Add(names[i]);// если совподения не найдены, добавляем к общему списку
+            }
+        }
+
+        Debug.Log("Готово!");
+    }
+    [MenuItem("Assets/Добавить во второй саисок загрузки")]
+    static void Add_Obj_List2()
+    {
+        List<string> names = new List<string>();
+        //List <Material> list_materials = new List<Material>();
+        //List<string> list_materials_name = new List<string>();
+
+        var Prefabs = LoadAllPrefabsAt("Assets/Resources/");// список прифабов в указанной папке
+        Debug.Log("Найдено прифабов " + Prefabs.Count);
+
+        for (int i = 0; i < Prefabs.Count; i++)// перебераем полученый массив
+        {
+            Object prefab = new Object();// создаем новый объект
+            prefab = Prefabs[i];
+            names.Add(prefab.name);// добавляем в список имя объекта     
+        }
+        GameObject Address_load = GameObject.Find("Address_load");// найти объект
+
+        for (int i = 0; i < names.Count; i++) // перебираем список имен полученых объектов
+        {
+            bool find = false;
+
+            for (int j = 0; j < Address_load.GetComponent<Addressable_Load>().First_List.Count; j++)// проверка общего списка, на наличие совподений
+            {
+                if (names[i] == Address_load.GetComponent<Addressable_Load>().First_List[j])// если нашли совподения
+                {
+                    find = true;
+                }
+            }
+            for (int j = 0; j < Address_load.GetComponent<Addressable_Load>()._mList.Count; j++)// проверка общего списка, на наличие совподений
+            {
+                if (names[i] == Address_load.GetComponent<Addressable_Load>()._mList[j])// если нашли совподения
+                {
+                    find = true;
+                }
+            }
+            if (!find)
+            {
+                Address_load.GetComponent<Addressable_Load>()._mList.Add(names[i]);// если совподения не найдены, добавляем к общему списку
+            }
+        }
+
+        Debug.Log("Готово!");
+    }
 
     [MenuItem("Assets/удалить материалы")]
     static void Del_material()
     {
         List<string> names = new List<string>();
-        List <Material> list_materials = new List<Material>();
-        
-        var Prefabs = LoadAllPrefabsAt("Assets/Resources/");// список прифабов в указанной папке
-        //Debug.Log("длинна объектов" + Prefabs.Count);
+        //List <Material> list_materials = new List<Material>();
+        //List<string> list_materials_name = new List<string>();
 
-        for (int i = 0; i < Prefabs.Count; i++)
+        var Prefabs = LoadAllPrefabsAt("Assets/Resources/");// список прифабов в указанной папке
+        Debug.Log("Найдено прифабов " + Prefabs.Count);
+
+        for (int i = 0; i < Prefabs.Count; i++)// перебераем полученый массив
         {
-            Object prefab = new Object();
+            Object prefab = new Object();// создаем новый объект
             prefab = Prefabs[i];
-            var chld = prefab.GetComponentsInChildren<MeshRenderer>();
+            var chld = prefab.GetComponentsInChildren<MeshRenderer>();// получаем кол-во материалов на объекте
             Debug.Log("длинна подобъектов" + chld.Length);
-            for (int f = 0; f < chld.Length; f++)
+
+            for (int f = 0; f < chld.Length; f++)// перебераем все марериалыв объекте
             {
-                var mat = chld[f].sharedMaterials;
-                for (int j = 0; j < mat.Length; j++)
+                var mat = chld[f].sharedMaterials; // переменная массива материалов объекта
+
+                if (!chld[f].GetComponent<New_Material>())// проверяем наличие нового скрипта
                 {
-                    names.Add(chld[f].name);
-                    list_materials.Add(mat[j]); 
-                    mat[j] = null;                    
+                    chld[f].AddComponent<New_Material>(); // добавляем скрипт если его нету
                 }
-                chld[f].sharedMaterials = mat;
-               if(!chld[f].GetComponent<New_Material>()) chld[f].AddComponent<New_Material>();               
+
+                for (int j = 0; j < mat.Length; j++)// перебираем марериалы объекта
+                {
+                    names.Add(chld[f].name);// добавляем в список имя объекта
+                    
+                    if(mat[j] != null)
+                    {
+                        chld[f].GetComponent<New_Material>().new_mat.Add(mat[j].name);// добавляем в скрипт имя материала
+                        mat[j] = null; // удаляем материал 
+                    }
+                                     
+                }
+                chld[f].sharedMaterials = mat;// меняем существующие материалы на пустые
+                            
             }
         }
-        GameObject Search_Canvas = GameObject.Find("Canvas_Game");// найти объект
-        Search_Canvas.GetComponent<Json_Controller>().Save_Material(names, list_materials);
-        Debug.Log("длинна списка " + list_materials.Count);
+        GameObject Address_load = GameObject.Find("Address_load");// найти объект
+
+        for(int i = 0; i < names.Count; i++) // перебираем список имен полученых объектов
+        {
+            bool find = false;
+
+            for (int j = 0; j < Address_load.GetComponent<Addressable_Load>()._mList.Count; j++)// проверка общего списка, на наличие совподений
+            {
+               if(names[i] == Address_load.GetComponent<Addressable_Load>()._mList[j])// если нашли совподения
+                {
+                    find = true;
+                }
+            }
+            if (!find)
+            {
+                Address_load.GetComponent<Addressable_Load>()._mList.Add(names[i]);// если совподения не найдены, добавляем к общему списку
+            }
+        }
+
+
+        //Address_load.GetComponent<Addressable_Load>()._mList = names;
+        // //Debug.Log("длинна списка " + list_materials.Count);
+        //Search_Canvas.GetComponent<Json_Controller>().Save_Material(names, list_materials_name);
+        //Debug.Log("длинна списка " + list_materials.Count);
         Debug.Log("Готово!");
     }
     [MenuItem("Assets/Создать бандлы автоматически")]

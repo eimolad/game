@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Teleport
+  m_EditorClassIdentifier: 
+  m_GroupName: Teleport
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 941edbb75d17920499544d7c7214a78e
+  m_SerializeEntries:
+  - m_GUID: 931439ad30b8fa94ca25f8d97b8c8e14
+    m_Address: Teleport_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b0a1b33e74f11d14da779bfd63f6f0c0
+    m_Address: Teleport_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: d5b719edea3f1c343b65eaafe63fbf10, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: d8a60ebab96723d4ca288129a85871a7, type: 2}
+    - {fileID: 11400000, guid: 544ac9f288832524ebb94ad63c74ab21, type: 2}

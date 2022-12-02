@@ -4,17 +4,16 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Point
   - Left_Arm_Socket
   - Right_Arm_Socket
-  - progress
-  - NFT
   - PlayerFramingCamera
-  - test
+  - Teleport
   - Enemy
   - Weapon1
+  - progress
   - Blood
-  - Teleport
+  - NFT
+  - Point
   layers:
   - Default
   - TransparentFX
@@ -23,8 +22,8 @@ TagManager:
   - Water
   - UI
   - Lable
-  - 
-  - 
+  - Teleport
+  - Player
   - 
   - 
   - 

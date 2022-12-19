@@ -1,5 +1,5 @@
 {
-    "equipment": [5,3,3,4,5],
+    "equipment": ["6","2","3","3","3","null","null"],
     "name": "Leviton3#D530",
     "quest": [
         {"questStep":0,"dialog_count":0,"recipe":"false"},

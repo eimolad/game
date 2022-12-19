@@ -16,7 +16,7 @@ public class UIitem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
         m_CanvasGroup = GetComponent<CanvasGroup>();
     }
     public void OnBeginDrag(PointerEventData eventData)
-    {
+    {  
         var slot_transform = m_RectTransform.parent;
         slot_transform.SetAsLastSibling();// обект сверху всех слоев
         m_CanvasGroup.blocksRaycasts = false;       
@@ -28,7 +28,7 @@ public class UIitem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
     }
 
     public void OnEndDrag(PointerEventData eventData)
-    {
+    {     
         transform.localPosition = Vector3.zero;
         m_CanvasGroup.blocksRaycasts = true;
     }

@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using static Json_Controller;
 using System.Threading;
 using System.Threading.Tasks;
 using System;
 using UnityEngine.AI;
-using Unity.Burst.CompilerServices;
+
 
 public class VALUE : MonoBehaviour
 {
     public string Player_Name;// имя игрока
+    public List<string> equipment;
     public float Cur_HP;
     public float HP;
     public float Cur_MP;
@@ -62,6 +62,8 @@ public class VALUE : MonoBehaviour
     float TimeDelayHp;
     float TimeDelayMp;
     public int cur_experience;
+    public int weight;
+    public int loot_bonus;
 
     public TMP_Text HP_regen;
     public TMP_Text MP_regen;
@@ -83,6 +85,7 @@ public class VALUE : MonoBehaviour
     int obj_count = 0;
     public bool DoOnce_Save = true;
     public Dictionary<string, Vector3> Teleport_Dictionary = new Dictionary<string, Vector3>();
+    public List<GameObject> Enemy_List = new List<GameObject>();
 
 
     void Start()

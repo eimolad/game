@@ -19,7 +19,7 @@ public class Addressable_Load : MonoBehaviour
     int count = 0;
     int count2 = 0;
     bool first = true;
-    bool action_zero = false;
+    bool action_zero = true;
     bool action = false;
     bool action2 = false;
     bool DoOnce1 = true;
@@ -27,7 +27,7 @@ public class Addressable_Load : MonoBehaviour
 
     private void Start()
     {
-        Addressables.InstantiateAsync("Start_Game_OBJ").Completed += Start_Game_OBJ;       
+        //Addressables.InstantiateAsync("Start_Game_OBJ").Completed += Start_Game_OBJ;       
         Count_Change += Counted;
     }
 
@@ -83,6 +83,7 @@ public class Addressable_Load : MonoBehaviour
     {
         if(action_zero)
         {
+
             action_zero = false;
             for (int i = 0; i < Start_List.Count; i++)
             {

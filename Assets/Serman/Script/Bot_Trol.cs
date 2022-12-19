@@ -1,4 +1,4 @@
-using Unity.Burst.CompilerServices;
+
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -6,6 +6,9 @@ using UnityEngine.AI;
 public class Bot_Trol : MonoBehaviour
 {
     private NavMeshAgent Bot_Agent;
+    NavMeshObstacle Obstacle;
+    ObstacleAgent Obstacle_skript;
+
     Animator anim;
     private static int ANIMATOR_PARAM_WALK = Animator.StringToHash("Go");
     private static int ANIMATOR_PARAM_Idle = Animator.StringToHash("Idle");
@@ -15,6 +18,7 @@ public class Bot_Trol : MonoBehaviour
     Player_Attack Player_Attack;
     GameObject Player_Hero;
 
+    public GameObject Tach_Bodey;
     public bool GO = false;
     public Vector3 portal;
     public float Distance_Plaer = 25f;
@@ -24,11 +28,19 @@ public class Bot_Trol : MonoBehaviour
     bool Go_Portal = false;
     bool start = false;
     public bool Agreses = false;
+    bool patrlol = true;
 
+    private void Awake()
+    {
+
+    }
     void Start()
     {
         Player_Hero = GameObject.Find("Hero Variant");
         Bot_Agent = gameObject.GetComponent<NavMeshAgent>();
+        Obstacle = GetComponent<NavMeshObstacle>();
+        Obstacle_skript = GetComponent<ObstacleAgent>();
+        Obstacle_skript.enabled = false;
         anim = GetComponent<Animator>();
         Bot_Agent.enabled = true;
         Player_Attack = Player_Hero.GetComponent<Player_Attack>(); // скрипт атаки
@@ -59,15 +71,17 @@ public class Bot_Trol : MonoBehaviour
         GO = true;
         start = true;
         Go_Portal = false;
-        Debug.Log("помогаем");
+        //Debug.Log("помогаем");
+        Obstacle_skript.enabled = true;
+        Bot_Agent.SetDestination(Player_Hero.transform.position);// бежим за героем
+        Obstacle_skript.SetDestination(Player_Hero.transform.position);
         Agreses = true;
     }
     void FixedUpdate()
     {
-        if (!Go_Portal && Bot_Agent.enabled) transform.LookAt(Player_Hero.transform.position);// поворот в сторону игрока
-
-
+        if (!Go_Portal && Bot_Agent.enabled && Agreses) transform.LookAt(Player_Hero.transform.position);// поворот в сторону игрока
         Go_in_Hero();
+        Welk_Patrol();
     }
     public void Death()
     {
@@ -79,7 +93,7 @@ public class Bot_Trol : MonoBehaviour
         var dist = Vector3.Distance(transform.position, Player_Hero.transform.position); // дистанция до героя
         var dist_portal = Vector3.Distance(transform.position, portal); // дистанция до портала
 
-        if (dist < 40 && !Agreses)
+        if (dist < 3 && !Agreses)
         {
            if(Player_Hero.GetComponent<Player_Attack>().Agresiya)// если герой агресивный и рядом
             {
@@ -91,7 +105,9 @@ public class Bot_Trol : MonoBehaviour
         {
             if (!Go_Portal)
             {
+                Bot_Agent.speed = 2f;
                 Bot_Agent.SetDestination(Player_Hero.transform.position);// бежим за героем
+                Obstacle_skript.SetDestination(Player_Hero.transform.position);
             }
             else
             {
@@ -113,13 +129,12 @@ public class Bot_Trol : MonoBehaviour
                     Bot_Agent.isStopped = true;
                     GO = false;
                     Stop = true;
-                    //Go_Portal = false;
                     count = 0;
 
                 }
             }
         }
-        if (dist > 5 && Stop) GO = true; // если до героя большая дистанция, то бежим за ним
+        if (dist > 2.5f && Stop) GO = true; // если до героя большая дистанция, то бежим за ним
 
         if (dist > 2 && !GO)
         {
@@ -132,6 +147,10 @@ public class Bot_Trol : MonoBehaviour
         if (dist_portal > 40 && start) // если портал далеко, возврат к нему
         {
             //Debug.Log("далеко от портала");
+            Bot_Agent.speed = 2f;
+            Obstacle_skript.enabled = false;
+            Obstacle.enabled = false;
+            Bot_Agent.enabled = true;
             Go_Portal = true;
         }
 
@@ -144,28 +163,34 @@ public class Bot_Trol : MonoBehaviour
             anim.SetBool("Run", false);
             anim.SetBool("Attack", false);
             anim.SetBool("Huck", false);
+            anim.SetBool("Welk", false);
             count = 0;
             Go_Portal = false;
             Stop = false;
             //Debug.Log("пребежал к порталу");            
         }
     }
-    void Agressive_Attack()
-    {
-        transform.LookAt(Player_Hero.transform.position);// поворот в сторону игрока
-        var dist = Vector3.Distance(transform.position, Player_Hero.transform.position); // дистанция до героя
-        if (dist <= Distance_Plaer)
-        {
-            Bot_Agent.SetDestination(Player_Hero.transform.position);// бежим за героем            
-        }
-        else
-        {
-            Bot_Agent.SetDestination(portal);// возврвт к порталу
-            GO = false;
-        }
-        if (Bot_Agent.remainingDistance <= Bot_Agent.stoppingDistance + 0.5f && Stop)//
-        {
 
+    public void Welk_Patrol()
+    {
+        if(patrlol && !Agreses)
+        {            
+            var point = new Vector3(portal.x + Random.Range(portal.x + -350f, portal.x + 350f), portal.y, portal.z + Random.Range(portal.z + -250f, portal.z + 250f));
+            //Debug.Log("portal " + portal);
+            //Debug.Log("point " + point);
+            //Agreses = true;
+            Bot_Agent.SetDestination(point);
+            Bot_Agent.speed = 0.5f;
+            anim.SetBool("Welk", true);
+            patrlol = false;
+        }
+      
+        if (Bot_Agent.remainingDistance <= Bot_Agent.stoppingDistance + 0.5f && !patrlol)//
+        {
+            patrlol = true;
+            anim.SetBool("Welk", false);
         }
     }
+
+
 }

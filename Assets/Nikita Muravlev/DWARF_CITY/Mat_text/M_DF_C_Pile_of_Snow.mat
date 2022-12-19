@@ -51,16 +51,16 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Add_AO: 0.08
+    - _Add_AO: 0.42
     - _Add_AO_Enable: 1
     - _Enable_Emissive_Material: 0
-    - _Gloss: 1
+    - _Gloss: 0.25
     - _Multiply_AO: 1
     - _Multiply_AO_Enable: 1
-    - _Normal_Intensity: 2
+    - _Normal_Intensity: 0.17
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Saturation: 1
+    - _Saturation: 1.67
     m_Colors:
     - _Tiling: {r: 5, g: 5, b: 0, a: 0}
   m_BuildTextureStacks: []

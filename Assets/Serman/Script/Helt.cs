@@ -9,7 +9,7 @@ public class Helt : MonoBehaviour
 {
     Animator anim;
     bool attack = false;
-    GameObject Canvas_obj;
+    GameObject Canvas_obj, canvas;
     int count_helt = 0;
     public GameObject Player_Hero;
     Player_Attack player_Attack_skript;
@@ -44,6 +44,7 @@ public class Helt : MonoBehaviour
         generatedParticle = Instantiate(Fx3[0], new Vector3(transform.position.x, transform.position.y + 0.2f, transform.position.z), Quaternion.identity);
         generatedParticle2 = Instantiate(Fx3[1], new Vector3(transform.position.x, transform.position.y + 0.2f, transform.position.z), Quaternion.identity);
 
+        canvas = GameObject.Find("Canvas_Game");
         Portal_Obj = new GameObject();
         anim = GetComponent<Animator>();
         Canvas_obj = GameObject.Find("Canvas_Game");
@@ -79,12 +80,11 @@ public class Helt : MonoBehaviour
     public void Huck()
     {
         gameObject.GetComponent<Bot_Trol>().GO = true;
-        count_helt++;
-    
-        if (count_helt >= 5)
-        {
-            //Debug.Log("СУКА!!! Ты убил меня");
-            Sound_attack.Stop();
+        gameObject.GetComponent<Charachter_mob>().Cur_HP = gameObject.GetComponent<Charachter_mob>().Cur_HP - canvas.GetComponent<VALUE>().attack;
+
+        if (gameObject.GetComponent<Charachter_mob>().Cur_HP <= 0)
+        { 
+           Sound_attack.Stop();
             Sound_Huck.Stop();
             Sound_Death.Play();
             anim.SetBool("Run", false);

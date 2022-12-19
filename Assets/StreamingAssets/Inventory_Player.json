@@ -1,1 +1,47 @@
-{ "icp": 0, "gold": 0, "coal": 0, "ore": 0, "adit": 0, "lgs": 0, "leather": 0, "bronze": 0, "tp": 0 }
+{
+    "tokens": {
+        "icp": 0,
+        "gold": 0,
+        "coal": 0,
+        "ore": 0,
+        "adit": 0,
+        "lgs": 0,
+        "leather": 0,
+        "bronze": 16,
+        "tp": 5
+    },
+    "items": [
+        {
+            "type": "equipment",
+            "index": 1227,
+            "collection": "weapons",
+            "rare": "standart",
+            "metadata": {
+                "weaponType": "one-handed",
+                "ledgerCanister": "n6bj5-ryaaa-aaaan-qaaqq-cai",
+                "state": "none",
+                "modelCanister": "n6bj5-ryaaa-aaaan-qaaqq-cai"
+            }
+        },
+        {
+            "type": "equipment",
+            "index": 1677,
+            "collection": "weapons",
+            "rare": "superrare",
+            "metadata": {
+                "weaponType": "one-handed",
+                "ledgerCanister": "n6bj5-ryaaa-aaaan-qaaqq-cai",
+                "state": "none",
+                "modelCanister": "n6bj5-ryaaa-aaaan-qaaqq-cai"
+            }
+        },
+        {
+            "name": "Grenlyn’s Shield",
+            "index": 0,
+            "ledgerCanister": "6spgj-fiaaa-aaaan-qa4sa-cai",
+            "id": [
+                "0"
+            ]
+        }
+    ]
+}

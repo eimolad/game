@@ -23,11 +23,11 @@ public class AI_Correct_Graund : MonoBehaviour
     {
         Ray ray = new Ray(Player_Botinki.position, -transform.up);       
         RaycastHit hit; 
-        RaycastHit[] hits = Physics.RaycastAll(ray, 1f);
+        RaycastHit[] hits = Physics.RaycastAll(ray, 2f);
 
         foreach (RaycastHit itm in hits)
         {
-            if (itm.collider.gameObject.layer == 3)
+            if (itm.collider.gameObject.layer == 3 || itm.collider.gameObject.layer == 1)
             {
                 hit = itm;
              

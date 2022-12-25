@@ -8,18 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Level_1.unity
     guid: b961e818037b6cf4b9a9f6ce4e8bb3fd
-  - enabled: 0
-    path: Assets/Level_4.unity
-    guid: 934cccc4dbf742b408929e75cac03232
-  - enabled: 0
-    path: Assets/Level_2.unity
-    guid: 5d06be8945509e541b9a18d8917ca3c2
-  - enabled: 0
-    path: Assets/5.unity
-    guid: 99d47524becf4084d818e9336e8b0d38
-  - enabled: 0
-    path: Assets/6.unity
-    guid: 26f9871ec7c350f4d802b1c95eca8503
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 35bb7b7bf92e4174793cbbc551b8f960,
       type: 2}

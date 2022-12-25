@@ -28,12 +28,27 @@ public class VALUE : MonoBehaviour
     public Vector3[] scroll_vector = new Vector3[5];// координаты кожанного свитка
     public int scroll_caunt; // колличество добытых свитков
     public TMP_Text scroll_text;
-    GameObject Canvas_Game;
+    //GameObject Canvas_Game;
     List<GameObject> Scroll_All = new List<GameObject>();
     public Image Slider_HP_bar;
     public Image Slider_MP_bar;
     public Image Slider_exp_bar;
-    public int Teleport;
+    public TMP_Text Icp_Text;
+    public TMP_Text Gold_Text;
+    public TMP_Text Adit_Text;
+    public TMP_Text Bronze_Text;
+    public TMP_Text Coal_Text;
+    public TMP_Text Ore_Text;
+
+    public float Icp;
+    public int Gold;
+    public int Coal;//уголь
+    public int Ore;//Руда
+    public int Adit;
+    public int Lgs;//
+    public int Leather;//Кожа
+    public int Bronze;
+    public int Tp;// телепорт
 
     public int experience;// опыт
     public int level; // уровень
@@ -73,6 +88,7 @@ public class VALUE : MonoBehaviour
     public TMP_Text HP_txt;
     public TMP_Text MP_txt;
     public TMP_Text Teleport_txt;
+    public TMP_Text Gold_txt;
     //public GameObject Shild_obj, Inventory_Shild, Shild_obj_Veapon_bar;//объекты щита
     public GameObject Svitok_obj;
     public GameObject Svitok_obj2;
@@ -86,13 +102,18 @@ public class VALUE : MonoBehaviour
     public bool DoOnce_Save = true;
     public Dictionary<string, Vector3> Teleport_Dictionary = new Dictionary<string, Vector3>();
     public List<GameObject> Enemy_List = new List<GameObject>();
-
+    public List<string> Weapon_inventory = new List<string>();
+    public string Weapon_List_Count_num = "null";
+    public List<string> Shild_inventory = new List<string>();
+    public string Shild_List_Count_num = "null";
+    public List<string> All_inventory = new List<string>();
+    //public string Left_Hаnd;
 
     void Start()
     {
         Player_Name_Text.text = Player_Name;
         Level_txt.text = level.ToString();
-        Canvas_Game = GameObject.Find("Canvas_Game");
+        //Canvas_Game = GameObject.Find("Canvas_Game");
         Cur_HP = 471f;
         Cur_MP = 371f;
         cur_experience = 0;
@@ -113,6 +134,40 @@ public class VALUE : MonoBehaviour
         //Rang_txt = gameObject.AddComponent<TMP_Text>();
     }
 
+    public void started_game()
+    {
+        //Debug.Log(equipment.Count);
+        gameObject.GetComponent<Load_Hero_Inventory>().enabled = true;
+        //StartCoroutine(gameObject.GetComponent<Load_Hero_Inventory>().load_hero_complekt());
+    }
+    void Attributes()
+    {
+        if (Icp >= 1000f)
+        {
+            int rounded = (int)Math.Round(Icp, 0);
+            Icp_Text.text = (rounded / 1000f).ToString() + "K";
+        }             
+        else
+        {
+            int rounded = (int)Math.Round(Icp, 0);
+            Icp_Text.text = rounded.ToString();
+        }
+
+        if (Gold >= 1000) Gold_Text.text = (Gold / 1000).ToString() + "K";
+        else Gold_Text.text = Gold.ToString();
+
+        if (Coal >= 1000) Coal_Text.text = (Coal / 1000).ToString() + "K";
+        else Coal_Text.text = Coal.ToString();
+
+        if (Ore >= 1000) Ore_Text.text = (Ore / 1000).ToString() + "K";
+        else Ore_Text.text = Ore.ToString();
+
+        if (Adit >= 1000) Adit_Text.text = (Adit / 1000).ToString() + "K";
+        else Adit_Text.text = Adit.ToString();
+
+        if (Bronze >= 1000) Bronze_Text.text = (Bronze / 1000).ToString() + "K";
+        else Bronze_Text.text = Bronze.ToString();
+    }
     public void Active_OBJ(bool DoOnce)
     {
         if (DoOnce)
@@ -124,6 +179,8 @@ public class VALUE : MonoBehaviour
 
     void Update()
     {
+        Attributes();
+
         if (cur_experience >= experience)
         {
             level++;
@@ -138,7 +195,7 @@ public class VALUE : MonoBehaviour
         attack = strength;
         m_attack = intelligence;
         attack_speed = dexterity;
-        Teleport_txt.text = Teleport.ToString();
+        Teleport_txt.text = Tp.ToString();
         hp_regen = 0.05f * strength;
         mp_regen = (int)(0.05 * intelligence);
         HP_regen.text = "+" + hp_regen.ToString();
@@ -180,20 +237,20 @@ public class VALUE : MonoBehaviour
         Slider_MP_bar.fillAmount = Cur_MP / MP;
         MP_txt.text = ((int)Cur_MP).ToString() + "/" + MP;
 
-        Svitok_obj.SetActive(recipe);// показываем или нет свиток в инвентаре
+        //Svitok_obj.SetActive(recipe);// показываем или нет свиток в инвентаре
         //Shild_obj.SetActive(Shild);// показываем или нет щит
         //Inventory_Shild.SetActive(Shild);// показываем или нет щит
         //Shild_obj_Veapon_bar.SetActive(Shild);// показываем или нет щит
         //Empty_shild.SetActive(!Shild);
-        if (scroll_caunt > 0)
-        {
-            Svitok_obj2.SetActive(true);
-            scroll_text.text = scroll_caunt.ToString();
-        }
-        else
-        {
-            Svitok_obj2.SetActive(false);
-        }
+        //if (scroll_caunt > 0)
+        //{
+        //    Svitok_obj2.SetActive(true);
+        //    scroll_text.text = scroll_caunt.ToString();
+        //}
+        //else
+        //{
+        //    Svitok_obj2.SetActive(false);
+        //}
 
         //if (Input.GetKeyDown(KeyCode.Z))
         //{
@@ -202,16 +259,36 @@ public class VALUE : MonoBehaviour
         //    //gameObject.GetComponent<Svitok_Generate_go>().count_name = 0;
         //}
     }
+    public void Gold_take()
+    {
+        if (level <= 5)
+        {
+            Gold += 3;
+            cur_experience += 30;
+        }
+        if (level > 5 && level < 8)
+        {
+            Gold += 2;
+            cur_experience += 20;
+        }
+        if (level > 7 && level < 10)
+        {
+            Gold += 1;
+            cur_experience += 10;
+        }
+        Gold_txt.text = Gold.ToString();
+        //GetComponent<Base_React>().Go("pickedUpTeleport=" + count.ToString());
+    }
     public void Teleport_take(int count)
     {
-        Teleport += 1;
+        Tp += 1;
         Teleport_mess_obj.SetActive(true);
         //GetComponent<Base_React>().Go("pickedUpTeleport=" + count.ToString());
     }
     public void Teleport_loss(int count)
     {
         //Debug.Log(count);
-        Teleport = Teleport - count;
+        Tp = Tp - count;
         //GetComponent<Base_React>().Go("teleportUsed=" + count.ToString());
     }
     public void Svitok()
@@ -284,7 +361,7 @@ public class VALUE : MonoBehaviour
     {
         if (DoOnce_Save)
         {
-            Canvas_Game.GetComponent<Json_Controller>().Save_json();
+            gameObject.GetComponent<Json_Player_info>().Save_json();
             DoOnce_Save = false;
         }
 

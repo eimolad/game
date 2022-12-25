@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: City6
+  m_EditorClassIdentifier: 
+  m_GroupName: City6
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 8f4c37bff81e1994abfbdd50af1bd241
+  m_SerializeEntries:
+  - m_GUID: 92d087d295f66d74ebe222700846f594
+    m_Address: DF_C_Trim_model_borders_set_1_5_Instance_6
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b389048f5b65bbf46a5eb54ec2bee431
+    m_Address: DF_C_Trim_model_borders_set_1_5_Instance_7
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: da3b92e84b1bbf542bbfb0254e88b4fd
+    m_Address: DF_C_Trim_model_borders_set_1_5_Instance_8
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a606691de06e20849abfb975e936cdad
+    m_Address: DF_C_Trim_model_borders_set_1_5_Instance_9
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3575164eeb7bfef4eb4ca0722c970d8c
+    m_Address: DF_C_Trim_model_borders_set_1_5_Instance_10
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f6de5cb026ee1bb458f0a782e3de4b5d
+    m_Address: DF_C_Trim_model_borders_set_1_5_Instance_11
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4aa8500236b464549ace22f2837bcbbe
+    m_Address: DF_C_Trim_model_borders_set_1_5_Instance_12
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 857bb7da5e51e484787a33240128a810
+    m_Address: DF_C_Trim_model_borders_set_1_5_Instance_13
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: bb68ce63dbf46ff4a9974517062c5488
+    m_Address: DF_C_Tile_model_floor_1_1_Instance_5
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6f50e84e2aa89234b8180acab21833e3
+    m_Address: DF_C_Trim_steps_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6c493ad624573a14d8ad298c91793c3e
+    m_Address: DF_C_Trim_steps_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7a460f5286572894185a1951358641ac
+    m_Address: DF_C_Trim_steps_3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c9193083b63a031419aa0fa206e0bb2f
+    m_Address: DF_C_Central_Section_Border_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ed892f11ff40629438983ac221aaa6c9
+    m_Address: DF_C_Central_Section_Wall_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: d5b719edea3f1c343b65eaafe63fbf10, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 5c50a08913fbb524993be9aacd7cb64a, type: 2}

@@ -21,7 +21,7 @@ public class OnEnable1 : MonoBehaviour
         for (int i = 0; i < telep.Length; i++)
         {
             dist1 = Vector3.Distance(telep[i].transform.position, player.transform.position);
-            dist_to_telep[telep[i].name] = Math.Ceiling(dist1 / 100);
+            dist_to_telep[telep[i].name] = 1;//Math.Ceiling(dist1 / 100)
 
             foreach (var key in dist_to_telep)
             {

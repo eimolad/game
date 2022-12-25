@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: City4
+  m_EditorClassIdentifier: 
+  m_GroupName: City4
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 5f632642fa1c387498bf165c87a683f1
+  m_SerializeEntries:
+  - m_GUID: 639b2e55c321add489c21569f0773363
+    m_Address: DF_C_Bridge_1_Border
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8e52b7b8240552f4dbe0a65de1e172b8
+    m_Address: DF_C_Stair_Bridge_Brick_Under_Floor
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4a633b10e70f8f4449f82a926fd650b5
+    m_Address: DF_C_Section_1_Border_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 035f7e73b882a074b97ddc866f9d3031
+    m_Address: DF_C_Vertical_2_3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d7aa5e4c4f1086740b2131f1d9e17257
+    m_Address: DF_C_Central_Section_Door_1_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 88db2702865a0c9429d9a09a3916b950
+    m_Address: DF_C_Central_Section_Wall_4
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: bcc0a49b72d5dfa4fa12ced1fd5920d9
+    m_Address: DF_C_Tunnel_R
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1b411beef4dd2ed40ab2ddea501a3e8d
+    m_Address: DF_C_Big_Bridge_1 (1)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 26ee8796a74f4cc429d70fb307e6f2ab
+    m_Address: DF_C_Vertical_2_11
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ad58b6277faf12244a647737a796c129
+    m_Address: DF_C_Vertical_1_9
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b212b00b53d570d45b66ac2f8373f746
+    m_Address: DF_C_Vertical_1_8
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6f340f8222136f042b4ade2a2a0b2f93
+    m_Address: DF_C_Vertical_2_10
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: d5b719edea3f1c343b65eaafe63fbf10, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 4bdc56ddcf6cd834da9f00fc4b1b54c0, type: 2}

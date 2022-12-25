@@ -114,7 +114,7 @@ public class Teleport_list : MonoBehaviour
                     if (telep_name == telep[i].name && telep_name == key.Key)
                     {
                         GetComponent<VALUE>().Teleport_loss((int)(key.Value));
-                        if (gameObject.GetComponent<VALUE>().Teleport == 0) { Text_count_scrolls.transform.parent.gameObject.transform.parent.gameObject.SetActive(false); }
+                        if (gameObject.GetComponent<VALUE>().Tp == 0) { Text_count_scrolls.transform.parent.gameObject.transform.parent.gameObject.SetActive(false); }
                         player.GetComponent<NavMeshAgent>().enabled = false;
                         player.transform.position = new Vector3(telep[i].transform.position.x - 6f, telep[i].transform.position.y, telep[i].transform.position.z);
                         player.GetComponent<NavMeshAgent>().enabled = true;
@@ -134,7 +134,7 @@ public class Teleport_list : MonoBehaviour
                     if (telep_name == telep[i].name && telep_name == key.Key)
                     {
                         GetComponent<VALUE>().Teleport_loss((int)(key.Value));
-                        if (gameObject.GetComponent<VALUE>().Teleport == 0) { Text_count_scrolls.transform.parent.gameObject.transform.parent.gameObject.SetActive(false); }
+                        if (gameObject.GetComponent<VALUE>().Tp == 0) { Text_count_scrolls.transform.parent.gameObject.transform.parent.gameObject.SetActive(false); }
                         player.GetComponent<NavMeshAgent>().enabled = false;
                         player.transform.position = new Vector3(telep[i].transform.position.x - 6f, telep[i].transform.position.y, telep[i].transform.position.z);
                         player.GetComponent<NavMeshAgent>().enabled = true;

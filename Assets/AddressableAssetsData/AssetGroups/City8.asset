@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: City8
+  m_EditorClassIdentifier: 
+  m_GroupName: City8
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 908819ffc15fecf4992ee345a2b78632
+  m_SerializeEntries:
+  - m_GUID: d07a2c3f76b8fe746af3719f6748e959
+    m_Address: DF_C_Mountain
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 096e247cee841db42980f84253695deb
+    m_Address: DF_C_Section_1_Border_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4f33f9e88ca1bef498bc3ac33ed24394
+    m_Address: DF_C_Section_2_Border_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 015bab6ce56b552458e4e4d2295c7ad2
+    m_Address: DF_C_Section_2_Border_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ca04bd13210e42845843c2e2741cbe22
+    m_Address: DF_C_Section_2_Wall_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5dfa23a83af16ee4ea3e2b3d76cfea51
+    m_Address: DF_C_Section_2_Wall_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5115ae0d360043641bd43c492b30b4a6
+    m_Address: DF_C_Section_3_Border_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d206e8332ed84c541b45735852f0d99f
+    m_Address: DF_C_Section_3_Border_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: db1323d4ab06984468fb04bcf7dcdc56
+    m_Address: DF_C_Section_3_Wall_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 455fff13045a95643bcc8a1746f04004
+    m_Address: DF_C_Section_3_Wall_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e6746a64b20775842a4714be83f8d305
+    m_Address: DF_C_Stair_Border
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2b21bf8c0e9746947a23b0bbfec87b88
+    m_Address: DF_C_Stair_Bridge_Brick_Floor
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: bea06d2d19ce9cb408c69103f8935d35
+    m_Address: DF_C_Stair_Wall
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 60993dd4cff30d74297d05197d3b2478
+    m_Address: DF_C_Stair_Wall_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 89c2ccd899fb2204eb95f281d12e3800
+    m_Address: DF_C_Tile_model_floor_1_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: da81b3b4bff8fe74fb13e6eaa5b59e20
+    m_Address: DF_C_Tile_model_floor_1_1_Instance_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f2e584d524332224fba97ad9d487da90
+    m_Address: DF_C_Tile_model_floor_1_1_Instance_3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: d5b719edea3f1c343b65eaafe63fbf10, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: a3e7787fd3fe1d744b1c8996371bc818, type: 2}

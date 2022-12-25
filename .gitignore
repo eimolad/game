@@ -73,3 +73,5 @@ Assets/Rishat/Models/teleport/Rog/DefaultMaterial.001.mat
 Assets/Rishat/Models/teleport/Rog/Rog_low_DefaultMaterial_BaseMap.jpg
 Assets/Rishat/Models/teleport/Rog/Rog_low_DefaultMaterial_Normal.jpg
 Assets/Rishat/Models/teleport/teleport.fbx
+*.bundle
+ServerData/WebGL

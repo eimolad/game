@@ -95,7 +95,7 @@ public class Player_move_mouse_2 : MonoBehaviour
                     Click_Mouse = false;
                     GO = true;
                     point_Set = point_hero;
-                   StartCoroutine(Search_Canvas.GetComponent<Json_Controller>().Dinamic_Load_OBJ(point_Set));
+                   //StartCoroutine(Search_Canvas.GetComponent<Json_Controller>().Dinamic_Load_OBJ(point_Set));// динамическая подгрузка
                     //Debug.Log(point_Set);
                 }
                 Del_Obj = Instantiate(Point_Decal_Obj, point_hero, Quaternion.identity);

@@ -72,7 +72,12 @@ public class Player_Attack : MonoBehaviour
     }
     public void Run_Hero()// герой побежал
     {
-        Particle_Sword.Stop();
+        try
+        {
+            Particle_Sword.Stop();
+        }
+        catch { }
+       
     }
     public void Sound_play()// (вызов из анимации)
     {

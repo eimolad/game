@@ -83,7 +83,7 @@ public class Dialog : MonoBehaviour
     public void Responce_hero_Button_yes()
     {
         if (CanvasGame.GetComponent<VALUE>().Dialog_count < Dialog_all_NPC.Length) CanvasGame.GetComponent<VALUE>().Dialog_count += 1;
-        CanvasGame.GetComponent<Json_Controller>().Save_json();// сохраняем json
+        CanvasGame.GetComponent<Json_Player_info>().Save_json();// сохраняем json
         //Debug.Log("кнопка нажата Dialog_count " + CanvasGame.GetComponent<VALUE>().Dialog_count.ToString());
         Dialog_npc_func();
         if (CanvasGame.GetComponent<VALUE>().Dialog_count == 3 || CanvasGame.GetComponent<VALUE>().Dialog_count == 6)//
@@ -98,7 +98,7 @@ public class Dialog : MonoBehaviour
         if (CanvasGame.GetComponent<VALUE>().Dialog_count <= 3)
         {
             CanvasGame.GetComponent<VALUE>().Dialog_count = 0;
-            CanvasGame.GetComponent<Json_Controller>().Save_json();// сохраняем json
+            CanvasGame.GetComponent<Json_Player_info>().Save_json();// сохраняем json
         }
         if (CanvasGame.GetComponent<VALUE>().Dialog_count >= 3 && CanvasGame.GetComponent<VALUE>().Dialog_count <= 5) CanvasGame.GetComponent<VALUE>().Dialog_count = 4;
         Dialog_npc_func();
@@ -142,7 +142,7 @@ public class Dialog : MonoBehaviour
             start_timer = false;
             Time_Count = 5f;
             if (CanvasGame.GetComponent<VALUE>().Dialog_count < Dialog_all_NPC.Length) CanvasGame.GetComponent<VALUE>().Dialog_count += 1;
-            CanvasGame.GetComponent<Json_Controller>().Save_json();// сохраняем json
+            CanvasGame.GetComponent<Json_Player_info>().Save_json();// сохраняем json
             Dialog_npc_func();
             //Debug.Log("Вркмя");
         }
@@ -177,7 +177,7 @@ public class Dialog : MonoBehaviour
                 CanvasGame.GetComponent<VALUE>().processing = true;
                 CanvasGame.GetComponent<VALUE>().Quest_done = true;
                 gameObject.GetComponent<Base_React>().Go("pickedUpLgs");
-                CanvasGame.GetComponent<Json_Controller>().Save_json();// сохраняем json
+                CanvasGame.GetComponent<Json_Player_info>().Save_json();// сохраняем json
                 gameObject.SetActive(false);
             }
             gameObject.SetActive(false);

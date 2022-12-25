@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: City5
+  m_EditorClassIdentifier: 
+  m_GroupName: City5
+  m_Data:
+    m_SerializedData: []
+  m_GUID: f0d38ea81a479c84084164d9515410e8
+  m_SerializeEntries:
+  - m_GUID: 2cf59296f73d31d4ea5b4fe474a1db10
+    m_Address: DF_C_Tile_model_floor_1_1_Instance
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 87144faa89bec80469982ddb9b614f0d
+    m_Address: DF_C_Lava_Floor
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 320e9a5f834f18349bd731a61000ab71
+    m_Address: DF_C_Central_Section_Inside_1_low
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a366416d6ad22ce4089bdb4d5c0a84b3
+    m_Address: DF_C_Vertical_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2b5f7c50c80008041a527ee879ac108c
+    m_Address: DF_C_Central_Section_Door_2_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fd0b149175a66834e946cf60623c99d0
+    m_Address: DF_C_Big_Bridge_3_3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f843fa7cd05c7ac438f06dbf89b1fa80
+    m_Address: DF_C_Section_1_Wall_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4dc219cdab91dcd419c10c02a8d9eea9
+    m_Address: DF_C_Tile_Stair_Bridge_Wall
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7e9516860c948cc4aa0556a38d774843
+    m_Address: DF_C_Central_Section_Wall_3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 426db0ee203c39b4e8993e7a432e756d
+    m_Address: DF_C_Tunnel_Floor_R
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 61f5a9d2ca68e3e46b2ae893ea119136
+    m_Address: DF_C_Vertical_2_6
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cb8c6285d2131fc4f9bad9b3752fae1b
+    m_Address: DF_C_Outdoor
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: d5b719edea3f1c343b65eaafe63fbf10, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: fecdbdf8cab4f83498cf726ac6f564ab, type: 2}

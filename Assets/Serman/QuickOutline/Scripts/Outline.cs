@@ -187,9 +187,9 @@ public class Outline : MonoBehaviour
     {
         try
         {
-            // Destroy material instances
-            Destroy(outlineMaskMaterial);
-            Destroy(outlineFillMaterial);
+            //// Destroy material instances
+            //Destroy(outlineMaskMaterial);
+            //Destroy(outlineFillMaterial);
         }
         catch { }
   

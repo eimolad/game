@@ -74,20 +74,14 @@ public class Base_React : MonoBehaviour
 
     public void Text_Message(string mess)// принимаем сообщение из react
     {
-        gameObject.GetComponent<Json_Controller>().Load_json(mess);
-        //gameObject.GetComponent<Json_Controller>().Load_json_Attributes(mess);
-        //For_Text.GetComponent<Text>().text = mess;
+        gameObject.GetComponent<Json_Player_info>().Load_json(mess);
     }
     public void Text_Message_Attributes(string mess)// принимаем сообщение из react
     {
-        //gameObject.GetComponent<Json_Controller>().Load_json(mess);
-        gameObject.GetComponent<Json_Controller>().Load_json_Attributes(mess);
-        //For_Text.GetComponent<Text>().text = mess;
+        gameObject.GetComponent<Json_Attributes>().Load_json_Attributes(mess);
     }
     public void Text_Message_Inventorys(string mess)// принимаем сообщение из react
     {
-        ////gameObject.GetComponent<Json_Controller>().Load_json(mess);
-        //gameObject.GetComponent<Json_Controller>().Load_json_Attributes(mess);
-        ////For_Text.GetComponent<Text>().text = mess;
+        gameObject.GetComponent<Inventory_Backpack_json>().Load(mess);
     }
 }

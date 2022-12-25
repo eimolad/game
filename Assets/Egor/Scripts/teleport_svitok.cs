@@ -40,7 +40,7 @@ public class teleport_svitok : MonoBehaviour
                 GetComponent<Teleport_list>().telep_name = telep[i].name;
             }
         }
-        if (gameObject.GetComponent<VALUE>().Teleport - 1 >= 0)
+        if (gameObject.GetComponent<VALUE>().Tp - 1 >= 0)
         {
             Confirmation_telep.SetActive(true);
             Confirmation_telep.transform.Find("Conf_text").gameObject.GetComponent<Text>().text = "You're going to teleport. Are you sure?";

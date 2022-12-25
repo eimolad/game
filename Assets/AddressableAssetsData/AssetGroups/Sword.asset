@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Sword
+  m_EditorClassIdentifier: 
+  m_GroupName: Sword
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 9263b20a1d9fa2745a0741c29a3ccd2d
+  m_SerializeEntries:
+  - m_GUID: 78a10281da7fd4748b153c08b96ea23e
+    m_Address: dukes_sword
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 042d68a9f6b94834486015dec2758e00
+    m_Address: assassins_sword
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4fb255de30853f54085aca1a951362ad
+    m_Address: mercenarys_sword
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 140ba992b8ad4ab40a256ff504031e1a
+    m_Address: the_punisher_sword
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 70775305a19f7fa4fa6512c888db6057
+    m_Address: legionnaires_sword
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4b7c55b1893143f489a67c80285d22f8
+    m_Address: knights_sword
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: d5b719edea3f1c343b65eaafe63fbf10, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 594b19672f239ec49917a97bf56a57c8, type: 2}
+    - {fileID: 11400000, guid: cc5c0eee29fde3243940c8cced5408c0, type: 2}

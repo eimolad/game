@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Shram
+  m_EditorClassIdentifier: 
+  m_GroupName: Shram
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 584d22fc7e170ac4f94629b14f6a85e0
+  m_SerializeEntries:
+  - m_GUID: 6052d9050729b024c91f94e9980d3d3f
+    m_Address: sh0
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f6b563222b39feb439acb8a07e7963b4
+    m_Address: sh2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 142148c32f014e14f8fefbb83ed362c9
+    m_Address: sh3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6fd06348b9a9b5942bb2eb09493596d3
+    m_Address: sh4
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6170b0f00e4c40142bfc18e5081f982b
+    m_Address: sh5
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: d5b719edea3f1c343b65eaafe63fbf10, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 96cb5d2ce198d714da481ecf29fd0059, type: 2}
+    - {fileID: 11400000, guid: 26d59a59f0709234fa7cfcf414eded09, type: 2}

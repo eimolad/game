@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AI;
 using static UnityEngine.ParticleSystem;
@@ -19,6 +20,7 @@ public class Helt : MonoBehaviour
     public AudioSource Sound_attack;
     public AudioSource Sound_Huck;
     public AudioSource Sound_Death;
+    Portal_Trol Portal_Trol_script;
      ParticleSystem generatedParticle;
      ParticleSystem generatedParticle2;
 
@@ -33,6 +35,7 @@ public class Helt : MonoBehaviour
             Sound_attack.Stop();
             Sound_Huck.Play();
             anim.SetBool("Huck", true);// анимация повреждения
+            anim.SetBool("Attack", false);
             generatedParticle.transform.position = new Vector3(transform.position.x, transform.position.y + 0.2f, transform.position.z);
             generatedParticle2.transform.position = new Vector3(transform.position.x, transform.position.y + 0.2f, transform.position.z);
             generatedParticle.Play();
@@ -45,7 +48,7 @@ public class Helt : MonoBehaviour
         generatedParticle2 = Instantiate(Fx3[1], new Vector3(transform.position.x, transform.position.y + 0.2f, transform.position.z), Quaternion.identity);
 
         canvas = GameObject.Find("Canvas_Game");
-        Portal_Obj = new GameObject();
+        //Portal_Obj = new GameObject();
         anim = GetComponent<Animator>();
         Canvas_obj = GameObject.Find("Canvas_Game");
         //Blood = GameObject.Find("Blood_Vector");
@@ -54,10 +57,14 @@ public class Helt : MonoBehaviour
         Sound_Death = GameObject.Find("monster_2").GetComponent<AudioSource>();
         Player_Hero = GameObject.Find("Hero Variant");
         player_Attack_skript = Player_Hero.GetComponent<Player_Attack>();
+        //Portal_Trol_script = new Portal_Trol();
+        //Portal_Trol_script = Portal_Obj.GetComponent<Portal_Trol>();
     }
     
     void Update()
     {
+        //Debug.Log(gameObject.GetComponent<Charachter_mob>().Cur_HP);
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             //Debug.Log("!!!");
@@ -79,6 +86,7 @@ public class Helt : MonoBehaviour
     }
     public void Huck()
     {
+        //Debug.Log(gameObject.GetComponent<Charachter_mob>().Cur_HP);
         gameObject.GetComponent<Bot_Trol>().GO = true;
         gameObject.GetComponent<Charachter_mob>().Cur_HP = gameObject.GetComponent<Charachter_mob>().Cur_HP - canvas.GetComponent<VALUE>().attack;
 
@@ -91,23 +99,30 @@ public class Helt : MonoBehaviour
             anim.SetBool("Attack", false);
             anim.SetBool("Huck", false);
             GetComponent<Bot_Trol>().Death();
-            player_Attack_skript.Stpo_Attack();
+            //player_Attack_skript.Stpo_Attack();
             gameObject.GetComponent<NavMeshAgent>().enabled = false;
             //Canvas_obj.GetComponent<Base_React>().Go("pickedUpTeleport");
             GetComponent<Bot_Trol>().enabled = false;
+            player_Attack_skript.Stpo_Attack();
+            //Debug.Log("готов сдохнуть");
         }        
         anim.SetBool("Huck", false);       
     }
     public void Death()
     {
         //Debug.Log("Умер");
+
         //Sound_attack.Stop();
-        Canvas_obj.GetComponent<VALUE>().Teleport_take(1);
-        Canvas_obj.GetComponent<VALUE>().cur_experience += 10;
+        //Canvas_obj.GetComponent<VALUE>().Teleport_take(1);
+        Canvas_obj.GetComponent<VALUE>().Gold_take();
+        //Canvas_obj.GetComponent<VALUE>().cur_experience += 10;
         //Canvas_obj.GetComponent<Base_React>().Go("teleportUsed");
         gameObject.GetComponent<Collider>().enabled = false;
-        player_Attack_skript.Stpo_Attack();
+        //player_Attack_skript.Stpo_Attack();
         anim.SetBool("Death", false);
-        Portal_Obj.GetComponent<Portal_Trol>().Reload_Trol();
+        //await Task.Delay(5000);
+        //Debug.Log("таймер отсчитал");
+        //Portal_Obj.GetComponent<Portal_Trol>().Reload_Trol();
+
     }
 }

@@ -51,6 +51,8 @@ public class Charachter_mob : MonoBehaviour
 
     void Update()
     {
+        //Debug.Log(Cur_HP);
+
         if (cur_experience >= experience)
         {
             level++;
